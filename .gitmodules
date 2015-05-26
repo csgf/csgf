@@ -1,0 +1,3 @@
+[submodule "knowledge-base-portlet"]
+	path = knowledge-base-portlet
+	url = git@github.com:csgf/knowledge-base-portlet.git
