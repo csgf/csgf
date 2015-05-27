@@ -1,6 +1,6 @@
 [submodule "knowledge-base-portlet"]
 	path = knowledge-base-portlet
-	url = git@github.com:csgf/knowledge-base-portlet.git
+	url = https://github.com/csgf/knowledge-base-portlet.git
 [submodule "glibrary"]
 	path = glibrary
-	url = git@github.com:csgf/glibrary.git
+	url = https://github.com/csgf/glibrary.git
