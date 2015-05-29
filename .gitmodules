@@ -1,6 +1,6 @@
 [submodule "abinitdm-portlet"]
-        path = abinitdm-portlet
-        url = https://github.com/csgf/abinitdm-portlet.git
+	path = abinitdm-portlet
+	url = https://github.com/csgf/abinitdm-portlet.git
 [submodule "knowledge-base-portlet"]
 	path = knowledge-base-portlet
 	url = https://github.com/csgf/knowledge-base-portlet.git
