@@ -1,12 +1,17 @@
-==================
-CSGF Documentation
-==================
+Welcome to the CSGF Documentation
+=================================
 
-.. _intro-docs:
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Documentation
+The code is open source, and `available on github`_.
+
+
+The main documentation for the site is organized into a couple sections:
+
+* :ref:`insta-docs`
+* :ref:`core-docs`
+* :ref:`app-docs`
+* :ref:`training-docs`
+
 
 .. _insta-docs:
 
@@ -34,36 +39,35 @@ CSGF Documentation
    "hello world!"
    sequential
    parallel
-   computational chemistry
-     - abinitdm-portlet/docs/index 
-   computer science and mathematics
-     - cmsquares
-     - octave
-     - r
+   abinitdm-portlet/docs/index 
+   cmsquares
+   octave
+   r
    earth sciences
-     - wrf
+   wrf
    high energy physics
      - aleph analysis
      - corsika-lago
-     - nuclemd
+     - nuclemd-portlet/docs/index
    life sciences
-     - clustalw
+     - clustalw-portlet/docs/index
      - grideeg
    gromacs
-     - iort
+     - iort-portlet/docs/index
    cloud applications
-     - cloudapps
+     - cloudapps-portlet/docs/index
      - mycloud
    data applications
      - molon
      - pidadmin
    others
-     - astra
-     - sonification
+     - astra-portlet/docs/index 
+     - sonification-portlet/docs/index
      - knowledge base
      - semantic search
      - parallel semantic search
 
+.. _training-docs:
 .. toctree::
    :maxdepth: 2
    :caption: training materials
