@@ -78,7 +78,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
         * **allowCoreThreadTimeOut**: true
         * **prestartAllCoreThreads**: true
 
-[[img src=GridEngine-CheckStatusPool.png alt=foobar]]
+[[img src=/figures-and-documents/GridEngine-CheckStatusPool.png alt=foobar]]
 
 #### GridEngine-Pool
 * Create **GridEngine-Pool** with the following parameters:
@@ -93,7 +93,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
         * **allowCoreThreadTimeOut**: true
         * **prestartAllCoreThreads**: true
 
-[[img src=GridEngine-Pool.png alt=foobar]]
+[[img src=/figures-and-documents/GridEngine-Pool.png alt=foobar]]
 
 #### JobCheckStatusService
 * Create **JobCheckStatusService** with the following parameters:
@@ -103,7 +103,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
     * **Additional Properties**:
         * **jobsupdatinginterval**: 900
 
-[[img src=JobCheckStatusService.png alt=foobar]]
+[[img src=/figures-and-documents/JobCheckStatusService.png alt=foobar]]
 
 #### JobServices-Dispatcher
 * Create **JobServices-Dispatcher** with the following parameters:
@@ -115,7 +115,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
         * **resubnumber**: 10;
         * **myproxyservers**: gridit=myproxy.ct.infn.it;prod.vo.eu-eela.eu=myproxy.ct.infn.it;cometa=myproxy.ct.infn.it;eumed=myproxy.ct.infn.it;vo.eu-decide.eu=myproxy.ct.infn.it;sagrid=myproxy.ct.infn.it;euindia=myproxy.ct.infn.it;see=myproxy.ct.infn.it;
 
-[[img src=JobServices-Dispatcher.png alt=foobar]]
+[[img src=/figures-and-documents/JobServices-Dispatcher.png alt=foobar]]
 
 ### JDBC Resources
 Select Resources -> JDBC -> JDBC Connection Pools from left panel. On the right panel you can create the resources by clicking the New... button.
@@ -141,8 +141,8 @@ Select Resources -> JDBC -> JDBC Connection Pools from left panel. On the right 
 Please pay attention to the Url property, ***sg-database*** should be replaced with the correct Url of your database machine.
 You can check if you have correctly configured the Connection Pool by clicking on Ping button,  you should see the message **Ping Succeded**, otherwise please check your configuration.
 
-[[img src=UsersTrackingPool.png alt=foobar]]
-[[img src=UsersTrackingPool_AP.png alt=foobar]]
+[[img src=/figures-and-documents/UsersTrackingPool.png alt=foobar]]
+[[img src=/figures-and-documents/UsersTrackingPool_AP.png alt=foobar]]
 
 Restart glassfish to save the resources.
 
@@ -153,11 +153,11 @@ Select Resources -> JDBC -> JDBC Resources from left panel. On the right panel y
     * **JNDI Name**: jdbc/UserTrackingPool;
     * **Pool name**: select usertrackingPool.
 
-[[img src=jdbcUsersTrackingPool.png alt=foobar]]
+[[img src=/figures-and-documents/jdbcUsersTrackingPool.png alt=foobar]]
 
 #### jdbc/gehibernatepool
 * Create **jdbc/gehibernatepool** with the following parameter:
     * **JNDI Name**: jdbc/gehibernatepool;
     * **Pool name**: select usertrackingPool.
 
-[[img src=jdbcgehibernatepool.png alt=foobar]]
+[[img src=/figures-and-documents/jdbcgehibernatepool.png alt=foobar]]
