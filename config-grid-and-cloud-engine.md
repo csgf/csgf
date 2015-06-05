@@ -103,7 +103,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
     * **Additional Properties**:
         * **jobsupdatinginterval**: 900
 
-[[img src=/figures-and-documents/JobCheckStatusService.png alt=foobar]]
+[[img src=figures-and-documents/JobCheckStatusService.png alt=foobar]]
 
 #### JobServices-Dispatcher
 * Create **JobServices-Dispatcher** with the following parameters:
