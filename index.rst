@@ -29,6 +29,7 @@ The main documentation for the site is organized into a couple sections:
    the grid & cloud engine
    the etokenserver
    glibrary/docs/index
+   jsaga-adaptor-rocci/docs/index
 
 .. _app-docs:
 
@@ -44,28 +45,22 @@ The main documentation for the site is organized into a couple sections:
    octave
    r
    earth sciences
-   wrf
-   high energy physics
-     - aleph analysis
-     - corsika-lago
-     - nuclemd-portlet/docs/index
-   life sciences
-     - clustalw-portlet/docs/index
-     - grideeg
-   gromacs
-     - iort-portlet/docs/index
-   cloud applications
-     - cloudapps-portlet/docs/index
-     - mycloud
-   data applications
-     - molon
-     - pidadmin
-   others
-     - astra-portlet/docs/index 
-     - sonification-portlet/docs/index
-     - knowledge base
-     - semantic search
-     - parallel semantic search
+   wrf-portlet/docs/index
+   aleph analysis
+   corsika-lago
+   nuclemd-portlet/docs/index
+   clustalw-portlet/docs/index
+   grideeg
+   iort-portlet/docs/index
+   cloudapps-portlet/docs/index
+   mycloud
+   molon
+   pidadmin
+   astra-portlet/docs/index 
+   sonification-portlet/docs/index
+   knowledge base
+   semantic search
+   parallel semantic search
 
 .. _training-docs:
 .. toctree::
