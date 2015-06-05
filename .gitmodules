@@ -7,3 +7,36 @@
 [submodule "glibrary"]
 	path = glibrary
 	url = https://github.com/csgf/glibrary.git
+[submodule "jsaga-adaptor-rocci"]
+	path = jsaga-adaptor-rocci
+	url = https://github.com/csgf/jsaga-adaptor-rocci.git
+[submodule "cloudapps-portlet"]
+	path = cloudapps-portlet
+	url = https://github.com/csgf/cloudapps-portlet.git
+[submodule "nuclemd-portlet"]
+	path = nuclemd-portlet
+	url = https://github.com/csgf/nuclemd-portlet.git
+[submodule "trodan-portlet"]
+	path = trodan-portlet
+	url = https://github.com/csgf/trodan-portlet.git
+[submodule "wrf-portlet"]
+	path = wrf-portlet
+	url = https://github.com/csgf/wrf-portlet.git
+[submodule "clustalw-portlet"]
+	path = clustalw-portlet
+	url = https://github.com/csgf/clustalw-portlet.git
+[submodule "fratt-portlet"]
+	path = fratt-portlet
+	url = https://github.com/csgf/fratt-portlet.git
+[submodule "iort-portlet"]
+	path = iort-portlet
+	url = https://github.com/csgf/iort-portlet.git
+[submodule "sonification-portlet"]
+	path = sonification-portlet
+	url = https://github.com/csgf/sonification-portlet.git
+[submodule "astra-portlet"]
+	path = astra-portlet
+	url = https://github.com/csgf/astra-portlet.git
+[submodule "gromacs-portlet"]
+	path = gromacs-portlet
+	url = https://github.com/csgf/gromacs-portlet.git
