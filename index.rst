@@ -14,14 +14,12 @@ The main documentation for the site is organized into a couple sections:
 
 
 .. _insta-docs:
-
 .. toctree::
    :maxdepth: 2
    :caption: installation and configuration
 
 
 .. _core-docs:
-
 .. toctree::
    :maxdepth: 2
    :caption: core services
@@ -32,7 +30,6 @@ The main documentation for the site is organized into a couple sections:
    jsaga-adaptor-rocci/docs/index
 
 .. _app-docs:
-
 .. toctree::
    :maxdepth: 2
    :caption: applications
