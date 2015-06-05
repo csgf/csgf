@@ -4,7 +4,7 @@ Installation & Administration Guide
 
 *Sections below explain how to install a configure a Science Gateway and all its components:* 
 
-####[Enabling LDAP Authentication](config-ldap-in-liferay)
+####[Enabling LDAP Authentication](config-ldap-in-liferay.md)
 ####[Configuring Catania Grid Engine on liferay](ConfigCTGridEngine)
 <!--####[Upgrading Catania Grid Engine from 1.4.21 to 1.5.1](UpgradeCTGridEngine)-->
 ####[Configuring MySQL Database for liferay](ConfigLportalInMySQL)
