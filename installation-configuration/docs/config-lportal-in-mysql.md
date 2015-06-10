@@ -1,7 +1,6 @@
-[TOC]
+# Config lportal in mysql 
 
-# Prerequisites
-## Machine:
+## Prerequisites - Machine:
 
 These instructions describes how to install and configure a mysql server on a Debian 6.0.3
 
@@ -22,8 +21,7 @@ apt-get install vim
 ~~~~~~~~
 
 
-# MySQL Installation & Configuration
-## Install the software
+## MySQL Installation & Configuration
 
 Install MySQL server and client:
 
@@ -31,7 +29,7 @@ Install MySQL server and client:
 apt-get mysql-client mysql-server
 ~~~~~~~~
 
-## Create databases
+###Create databases
 First you need to set mysql password:
  
 ~~~~~~~~
@@ -82,12 +80,12 @@ mysql> exit
 Bye
 ~~~~~~~~
 
-# Troubleshooting
+## Troubleshooting
 
-## Firewall
+### Firewall
 In case you are not able to connect to the database from the server check the firewall rules, in particular for the port 3306
 
-## Access the database remotely
+### Access the database remotely
 
 Check that mysql is enabled to accept remote connections:
 

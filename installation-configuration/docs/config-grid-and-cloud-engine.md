@@ -1,5 +1,3 @@
-[TOC]
-
 # Prerequisities
 
 Check java version using the following command:
@@ -78,7 +76,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
         * **allowCoreThreadTimeOut**: true
         * **prestartAllCoreThreads**: true
 
-[[img src=/figures-and-documents/GridEngine-CheckStatusPool.png alt=foobar]]
+![statuspool](/figures-and-documents/GridEngine-CheckStatusPool.png)
 
 #### GridEngine-Pool
 * Create **GridEngine-Pool** with the following parameters:
