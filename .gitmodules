@@ -40,3 +40,6 @@
 [submodule "gromacs-portlet"]
 	path = gromacs-portlet
 	url = https://github.com/csgf/gromacs-portlet.git
+[submodule "eToken"]
+	path = eToken
+	url = https://github.com/csgf/eToken.git

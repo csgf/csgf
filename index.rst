@@ -1,8 +1,8 @@
 Welcome to the CSGF Documentation
 =================================
 
-
-The code is open source, and `available on github`_.
+.. _GITHUB: https://github.com/csgf/
+The code is open source, and available on [GITHUB_]
 
 
 The main documentation for the site is organized into a couple sections:
@@ -16,23 +16,31 @@ The main documentation for the site is organized into a couple sections:
 .. _insta-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: installation and configuration
-
-
+   :caption: Installation and configuration
+   
+   installation-and-administration-guide.md
+   install-liferay.611.md
+   config-grid-and-cloud-engine.md
+   config-user-tracking-db-in-mysql.md
+   config-lportal-in-mysql.md
+   config-ldap-in-liferay.md
+   config-shibboleth-sp.md
+   install-etokenserver.md 
+   
 .. _core-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: core services
+   :caption: Core Services
 
    the grid & cloud engine
-   the etokenserver
+   eToken/docs/index
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
 
 .. _app-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: applications
+   :caption: Applications
 
    "hello world!"
    sequential
