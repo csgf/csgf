@@ -18,7 +18,6 @@ The main documentation for the site is organized into a couple sections:
    :maxdepth: 2
    :caption: Installation and configuration
    
-   installation-configuration/docs/index   
  
 .. _core-docs:
 .. toctree::
