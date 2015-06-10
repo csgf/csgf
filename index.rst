@@ -2,7 +2,7 @@ Welcome to the CSGF Documentation
 =================================
 
 .. _GITHUB: https://github.com/csgf/
-The code is open source, and available on [GITHUB_]
+The code is open source, and available on GITHUB_
 
 
 The main documentation for the site is organized into a couple sections:
