@@ -49,6 +49,7 @@ The main documentation for the site is organized into a couple sections:
    nuclemd-portlet/docs/index
    clustalw-portlet/docs/index
    grideeg
+   trodan-portlet/docs/index
    iort-portlet/docs/index
    cloudapps-portlet/docs/index
    mycloud
