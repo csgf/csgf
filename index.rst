@@ -15,7 +15,7 @@ The main documentation for the site is organized into a couple sections:
 
 .. _insta-docs:
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 2
    :caption: Installation and configuration
    
    installation-configuration/docs/index   
