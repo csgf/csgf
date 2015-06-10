@@ -1,4 +1,4 @@
-# Prerequisities
+# config-grid-and-cloud-engine
 
 Check java version using the following command:
 
@@ -44,15 +44,15 @@ copy the extracted lib folder under the liferay domain folder:
 cp -r lib /opt/glassfish3/glassfish/domains/liferay/
 ~~~~~~~~~
 
-# Configuration
-## LogFile
+## Configuration
+### LogFile
 Download the attached GridEngineLogConfig.xml ([link](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigCTGridEngine/attachment/GridEngineLogConfig.xml)), and move this file to the Liferay config folder:
 
 ~~~~~~~~~
 mv GridEngineLogConfig.xml /opt/glassfish3/glassfish/domains/liferay/config
 ~~~~~~~~
 
-## Glassfish Configuration
+### Glassfish Configuration
 
 Restart glassfish server, when server is up access the web administration console:
 
@@ -60,10 +60,10 @@ Restart glassfish server, when server is up access the web administration consol
 
 fill with username liferayadmin and the password you set for the glassfish administrator and create the required resources. 
 
-### JNDI Resources
+#### JNDI Resources
 Select Resources -> JNDI -> Custom Resources from left panel. On the right panel you can create the resources by clicking the New... button.
 
-#### GridEngine-CheckStatusPool
+##### GridEngine-CheckStatusPool
 * Create **GridEngine-CheckStatusPool** with the following parameters;
     * **JNDI Name**: GridEngine-CheckStatusPool;
     * **Resource Type**: it.infn.ct.ThreadPool.CheckJobStatusThreadPoolExecutor
@@ -78,7 +78,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
 
 ![statuspool](/figures-and-documents/GridEngine-CheckStatusPool.png)
 
-#### GridEngine-Pool
+##### GridEngine-Pool
 * Create **GridEngine-Pool** with the following parameters:
     * **JNDI Name**: GridEngine-Pool;
     * **Resource Type**: it.infn.ct.ThreadPool.ThreadPoolExecutor
@@ -93,7 +93,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
 
 [[img src=/figures-and-documents/GridEngine-Pool.png alt=foobar]]
 
-#### JobCheckStatusService
+##### JobCheckStatusService
 * Create **JobCheckStatusService** with the following parameters:
     * **JNDI Name**: JobCheckStatusService;
     * **Resource Type**: it.infn.ct.GridEngine.JobService.JobCheckStatusService
@@ -103,7 +103,7 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
 
 [[img src=/figures-and-documents/JobCheckStatusService.png alt=foobar]]
 
-#### JobServices-Dispatcher
+##### JobServices-Dispatcher
 * Create **JobServices-Dispatcher** with the following parameters:
     * **JNDI Name**: JobServices-Dispatcher;
     * **Resource Type**: it.infn.ct.GridEngine.JobService.JobServicesDispatcher
@@ -115,10 +115,10 @@ Select Resources -> JNDI -> Custom Resources from left panel. On the right panel
 
 [[img src=/figures-and-documents/JobServices-Dispatcher.png alt=foobar]]
 
-### JDBC Resources
+#### JDBC Resources
 Select Resources -> JDBC -> JDBC Connection Pools from left panel. On the right panel you can create the resources by clicking the New... button.
 
-#### UserTrackingPool
+##### UserTrackingPool
 * Create **UserTrackingPool** with the following parameters:
     * General Settings (Step 1/2):
         * **Pool Name**: usertrackingPool
@@ -146,14 +146,14 @@ Restart glassfish to save the resources.
 
 Select Resources -> JDBC -> JDBC Resources from left panel. On the right panel you can create the resources by clicking the New... button.
 
-#### jdbc/UserTrackingPool
+##### jdbc/UserTrackingPool
 * Create **jdbc/UserTrackingPool** with the following parameter:
     * **JNDI Name**: jdbc/UserTrackingPool;
     * **Pool name**: select usertrackingPool.
 
 [[img src=/figures-and-documents/jdbcUsersTrackingPool.png alt=foobar]]
 
-#### jdbc/gehibernatepool
+##### jdbc/gehibernatepool
 * Create **jdbc/gehibernatepool** with the following parameter:
     * **JNDI Name**: jdbc/gehibernatepool;
     * **Pool name**: select usertrackingPool.

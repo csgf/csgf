@@ -1,6 +1,5 @@
-[TOC]
 
-# Prerequisities
+# Install liferay.611
 ## Server(s) requirements
 The Science Gateway and the database can be installed either on different machines or on the same one. As we chose the first approach, this is the one that is explained below. From now in on we will refer to these machines as: 
 
@@ -239,7 +238,7 @@ Command stop-domain executed successfully.
 ~~~~~~~~~
 
 
-# Liferay Installation
+## Liferay Installation
 
 Liferay is a web application, and so we need to deploy it on Glassfish. Before the deployment, we need to provide the correct library in Glassfish. 
 
@@ -363,9 +362,9 @@ su -c "sh /opt/glassfish3/glassfish/bin/asadmin start-domain liferay" - liferaya
 
 Where you specify that the user **liferayadmin** (and not root) will start the process automatically at boot.
 
-# Troubleshooting
+## Troubleshooting
 
-## Glassfish Port
+### Glassfish Port
 
 If your network is not configured properly you could not be able to start glassfish and you will get this error: 
 
@@ -384,7 +383,7 @@ As a good rule, you should set them in the /etc/hosts files as below:
 10.0.0.1   sg-server.yourdomain.foo    sg-server
 ~~~~~~~~~~
 
-## Glassfish Connection Pools 
+### Glassfish Connection Pools 
 It is important to configure the connection pools properly. If you don't, Liferay will not be able to start, or it's possible it will still use the database on file, that should not be used on a production server.
 
 Glassfish has a web interface. Access it and check if the connection to the database works properly. To access glassfish:
@@ -409,7 +408,7 @@ In case all the parameters are set correctly try to ping the database:
 
 ![Liferay Pool Ping Test](http://imageshack.us/a/img441/949/jdbccptest.png)
 
-## Liferay Theme not loaded properly 
+### Liferay Theme not loaded properly 
 
 If the start page is not loaded properly, before or after the configuration wizard, there could be some files created by liferay directory that have the wrong write permissions. 
 
@@ -435,7 +434,7 @@ drwxr-xr-x. 3 liferayadmin liferayadmin 4096 Mar  4 18:48 liferay
 drwxr-xr-x. 2 liferayadmin liferayadmin 4096 Feb 28 17:40 xuggle
 ~~~~~~~~~~
 
-## Maximum Number of file
+### Maximum Number of file
 Check what is the maximum number of file the operative system can open:
 
 ~~~~~~~~
@@ -452,7 +451,7 @@ fs.file-max=2000000
 ~~~~~~~~
 
 
-## SELinux 
+### SELinux 
 
 In case you are not able to start apache server properly you should check you SELinux configurations.
 To view your SELinux status type 

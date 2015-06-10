@@ -1,8 +1,8 @@
+#config-ldap-in-liferay
+
 This page explains how our LDAP server is configured in order to allow authentication and authorisation of users by an Identity Provider and and a Service Provider.  
 
-[TOC]
 
-# Prerequisites
 ## LDAP Configuration
 
 The following sections describes branches present in our LDAP and what any branch is meant to. For each branch is shown all user **attributes (UA)** and all **operational attributes (OA)**.
