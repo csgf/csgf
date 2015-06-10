@@ -18,15 +18,8 @@ The main documentation for the site is organized into a couple sections:
    :maxdepth: 6
    :caption: Installation and configuration
    
-   installation-and-administration-guide.md
-   install-liferay.611.md
-   config-grid-and-cloud-engine.md
-   config-user-tracking-db-in-mysql.md
-   config-lportal-in-mysql.md
-   config-ldap-in-liferay.md
-   config-shibboleth-sp.md
-   install-etokenserver.md 
-   
+   installation-configuration/docs/index   
+ 
 .. _core-docs:
 .. toctree::
    :maxdepth: 2
@@ -70,5 +63,5 @@ The main documentation for the site is organized into a couple sections:
 .. _training-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: training materials
+   :caption: Training materials
 
