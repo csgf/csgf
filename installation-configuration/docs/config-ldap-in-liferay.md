@@ -1,4 +1,4 @@
-#config-ldap-in-liferay
+# config-ldap-in-liferay
 
 This page explains how our LDAP server is configured in order to allow authentication and authorisation of users by an Identity Provider and and a Service Provider.  
 
@@ -7,8 +7,8 @@ This page explains how our LDAP server is configured in order to allow authentic
 
 The following sections describes branches present in our LDAP and what any branch is meant to. For each branch is shown all user **attributes (UA)** and all **operational attributes (OA)**.
 
-### LDAP root <dc=local\> 
-It's the route of the LDAP server
+ LDAP root <dc=local\> 
+ It's the route of the LDAP server
 
 ~~~~~~~~
 # extended LDIF
@@ -34,7 +34,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~  
 
-### Administrator user for idp <cn=idp,dc=local\>
+Administrator user for idp <cn=idp,dc=local\>
 It's the administrator user who register users in the IDP
 
 ~~~~~~~~
@@ -64,7 +64,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### Administrator user for the Science Gateway <cn=liferayadmin,dc=local\>
+Administrator user for the Science Gateway <cn=liferayadmin,dc=local\>
 It's the administrator user who is configured in the Science Gateway
 
 ~~~~~~~~
@@ -92,7 +92,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### Country grouping organisations <c=IT,ou=Organisations,dc=local\>
+Country grouping organisations <c=IT,ou=Organisations,dc=local\>
 
 We group all users' organisations according to their country. For example all Italian organisations are stored in this branch. 
 
@@ -122,7 +122,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### Example of organisations <o=INFN,c=IT,ou=Organisations,dc=local\>
+ Example of organisations <o=INFN,c=IT,ou=Organisations,dc=local\>
 
 The example below shows the entry for the INFN which is an Italian organisation. 
 
@@ -151,7 +151,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### Example of division of organisation <ou=Catania,o=INFN,c=IT,ou=Organisations,dc=local\>
+ Example of division of organisation <ou=Catania,o=INFN,c=IT,ou=Organisations,dc=local\>
 
 When an organisation has many divisions they are grouped inside it. The example below shows the Division of Catania of INFN
 
@@ -180,7 +180,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### Example of Services <dc=idpct,ou=Services,dc=local\>
+ Example of Services <dc=idpct,ou=Services,dc=local\>
 
 In this branch all users who can be authenticated by the idp are stored. These are distinguished by the administrator because they are stored in a different group.   
 
@@ -210,7 +210,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### IDP Administrators <cn=Administrator,ou=Group,dc=idpct,ou=Services,dc=local\>
+ IDP Administrators <cn=Administrator,ou=Group,dc=idpct,ou=Services,dc=local\>
 
 In the example below, the list of all users able to administrate the ldap is shown (i.e. to edit it). User's group is configured so that user's dn is unique. As you can see, together with administrator1, administrator2 and aministrator3, there is the liferayadmin users that is configured in liferay to make the two services communicate. Differently, administrator1, as a real user, is present the group People. 
 
@@ -243,7 +243,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### List of IDP Users <cn=Users,ou=Group,dc=idpct,ou=Services,dc=local\>
+ List of IDP Users <cn=Users,ou=Group,dc=idpct,ou=Services,dc=local\>
 
 In the same group we have the list of users who can be authenticated by the IDP. In order to make these users log in the Science Gateway (SG) is possible to connect the SG to this services or create a brand new services. This new branch then will be the one responsible for the authorisation. Liferay will do a map 1:1 between the group items present in the services and the different roles assigned to the user of the SG. For example let's suppose we use IDP branch for both authentication and authorisation. In this special case the user with cn=administrator1 will be administrator both of IDP and of the Science Gateway. 
 
@@ -277,7 +277,7 @@ result: 0 Success
 # numEntries: 1
 ~~~~~~~~
 
-### User branch example <cn=rotondo,ou=People,dc=local\>
+ User branch example <cn=rotondo,ou=People,dc=local\>
 
 Below we have all the information related to an user. 
 
@@ -411,8 +411,8 @@ search: 2
 result: 0 Success
 ~~~~~~~~~
 
-# Service Provider Configuration
-## Add CA Certificate to the keystore
+## Service Provider Configuration
+### Add CA Certificate to the keystore
 
 Before configuring Liferay you should verify, for example with a utility such as ldapsearch, that SSL communication is possible between the service provider (from now on sg-server) and the ldap server (from now on ldap-server). 
 

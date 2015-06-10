@@ -24,11 +24,11 @@ mkdir /tmp/jobOutput/
 
 Remeber that you need to configure the database. You can do that following [this guide](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigUserTrackingDBInMySQL).
 
-# Installation
+## Installation
 
 Before starting the installation make sure your liferay domains is stopped. 
 
-## Library Dependencies
+### Library Dependencies
 
 Download Grid Engine and JSAGA libraries from [here](http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip/download)
 
