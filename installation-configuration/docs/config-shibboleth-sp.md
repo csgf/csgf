@@ -2,15 +2,15 @@ This pages explains how to configure your Service Provider in order to demand au
 
 [TOC]
 
-# Prerequisites 
+# config shibboleth
 
 An apache server and shibboleth installed on the machine
 
-# Configure Apache files 
+## Configure Apache files 
 
 You should have some apache files configure as follow (usually store in */etc/httpd/conf.d*)
 
-## shib.conf
+  *shib.conf
 
 ~~~~~~~~~
 vim shib.conf
@@ -25,7 +25,7 @@ LoadModule mod_shib /usr/lib64/shibboleth/mod_shib_22.so
 ...
 ~~~~~~~~~
 
-## shibSec.conf
+  *shibSec.conf
 
 ~~~~~~~~~
 vim shibSec.conf
@@ -45,9 +45,8 @@ vim shibSec.conf
   require valid-user
 </Location>
 
-#
-# Configuration for metadata
-#
+
+## Configuration for metadata
 
 Alias /shibboleth/ "/var/www/metadata/"
 
@@ -56,7 +55,7 @@ Alias /shibboleth/ "/var/www/metadata/"
 ...
 ~~~~~~~~~
 
-## proxy_ajp.conf
+ *proxy_ajp.conf
 
 Once you configure the custom url you need to avoid them to contact the glassfish listener
 ~~~~~~~~~
@@ -68,7 +67,7 @@ ProxyPass / ajp://localhost:8009/
 ...
 ~~~~~~~~~
 
-# Configure Liferay to contact Shibboleth for authentication
+ Configure Liferay to contact Shibboleth for authentication
 
 ## Install Shibboleth plugin
 
@@ -114,5 +113,5 @@ vim /opt/glassfish3/glassfish/domains/liferay/applications/liferay611cega2/WEB-I
 ...
 ~~~~~~~~~
 
-# References
+## References
 [https://wiki.shibboleth.net/confluence/display/SHIB2/MetadataForSP](https://wiki.shibboleth.net/confluence/display/SHIB2/MetadataForSP)
