@@ -49,16 +49,19 @@ The main documentation for the site is organized into a couple sections:
    nuclemd-portlet/docs/index
    clustalw-portlet/docs/index
    grideeg
+   picalc-portlet/docs/index
    trodan-portlet/docs/index
    iort-portlet/docs/index
    cloudapps-portlet/docs/index
-   mycloud
+   mycloud-portlet/docs/index
    molon
    pidadmin
    astra-portlet/docs/index 
    sonification-portlet/docs/index
    semantic-search-portlet/docs/index
    parallel-semantic-search-portlet/docs/index
+   scoap3-harvester-api/docs/index
+   semantic-search-api/docs/index   
 
 .. _training-docs:
 .. toctree::
