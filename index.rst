@@ -37,7 +37,7 @@ The main documentation for the site is organized into a couple sections:
 
    "hello world!"
    sequential
-   parallel
+   /mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
    cmsquares
    octave
@@ -57,9 +57,9 @@ The main documentation for the site is organized into a couple sections:
    pidadmin
    astra-portlet/docs/index 
    sonification-portlet/docs/index
-   knowledge base
-   semantic search
-   parallel semantic search
+   knowledge-base-portlet/docs/index
+   semantic-search-portlet/docs/index
+   parallel-semantic-search-portlet/docs/index
 
 .. _training-docs:
 .. toctree::

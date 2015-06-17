@@ -43,3 +43,30 @@
 [submodule "eToken"]
 	path = eToken
 	url = https://github.com/csgf/eToken.git
+[submodule "mycloud-portlet"]
+	path = mycloud-portlet
+	url = https://github.com/csgf/mycloud-portlet.git
+[submodule "picalc-portlet"]
+	path = picalc-portlet
+	url = https://github.com/csgf/picalc-portlet.git
+[submodule "mpi-portlet"]
+	path = mpi-portlet
+	url = https://github.com/csgf/mpi-portlet.git
+[submodule "mi-hostname-portlet"]
+	path = mi-hostname-portlet
+	url = https://github.com/csgf/mi-hostname-portlet.git
+[submodule "scoap3-harvester-api"]
+	path = scoap3-harvester-api
+	url = https://github.com/csgf/scoap3-harvester-api.git
+[submodule "semantic-search-api"]
+	path = semantic-search-api
+	url = https://github.com/csgf/semantic-search-api.git
+[submodule "parallel-semantic-search-portlet"]
+	path = parallel-semantic-search-portlet
+	url = https://github.com/csgf/parallel-semantic-search-portlet.git
+[submodule "semantic-search-portlet"]
+	path = semantic-search-portlet
+	url = https://github.com/csgf/semantic-search-portlet.git
+[submodule "mi-parallel-portlet"]
+	path = mi-parallel-portlet
+	url = https://github.com/csgf/mi-parallel-portlet.git
