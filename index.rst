@@ -37,7 +37,7 @@ The main documentation for the site is organized into a couple sections:
 
    "hello world!"
    sequential
-   /mi-parallel-portlet/docs/index
+   mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
    cmsquares
    octave
