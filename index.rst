@@ -57,7 +57,6 @@ The main documentation for the site is organized into a couple sections:
    pidadmin
    astra-portlet/docs/index 
    sonification-portlet/docs/index
-   knowledge-base-portlet/docs/index
    semantic-search-portlet/docs/index
    parallel-semantic-search-portlet/docs/index
 
