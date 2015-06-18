@@ -29,6 +29,7 @@ The documentation is organized in the following sections:
    eToken/docs/index
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
+   federated-login-ext/docs/index
 
 .. _app-docs:
 .. toctree::
