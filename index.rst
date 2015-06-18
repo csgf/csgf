@@ -1,11 +1,11 @@
-Welcome to the CSGF Documentation
-=================================
+Catania Science Gateway Framework Documentation
+===============================================
 
 .. _GITHUB: https://github.com/csgf/
-The code is open source, and available on GITHUB_
+The CSGF is open source and released under the Apache 2.0 license. All code is available on GITHUB_
 
 
-The main documentation for the site is organized into a couple sections:
+The documentation is organized in the following sections:
 
 * :ref:`insta-docs`
 * :ref:`core-docs`
