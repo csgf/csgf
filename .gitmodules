@@ -70,6 +70,3 @@
 [submodule "mi-parallel-portlet"]
 	path = mi-parallel-portlet
 	url = https://github.com/csgf/mi-parallel-portlet.git
-[submodule "federated-login-ext"]
-	path = federated-login-ext
-	url = git@github.com:csgf/federated-login-ext.git
