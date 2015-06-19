@@ -30,6 +30,7 @@ The documentation is organized in the following sections:
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
    federated-login-ext/docs/index
+   sgmon/docs/index  
 
 .. _app-docs:
 .. toctree::
@@ -41,12 +42,12 @@ The documentation is organized in the following sections:
    mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
    cmsquares
-   octave
-   r
+   octave2-portlet/docs/index
+   r-portlet/docs/index
    earth sciences
    wrf-portlet/docs/index
-   aleph analysis
-   corsika-lago
+   aleph-portlet/docs/index
+   corsika-lago-portlet/docs/index
    nuclemd-portlet/docs/index
    clustalw-portlet/docs/index
    grideeg

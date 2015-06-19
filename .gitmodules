@@ -73,3 +73,18 @@
 [submodule "federated-login-ext"]
 	path = federated-login-ext
 	url = https://github.com/csgf/federated-login-ext.git
+[submodule "r-portlet"]
+	path = r-portlet
+	url = https://github.com/csgf/r-portlet.git
+[submodule "sgmon"]
+	path = sgmon
+	url = https://github.com/csgf/sgmon.git
+[submodule "octave2-portlet"]
+	path = octave2-portlet
+	url = https://github.com/csgf/octave2-portlet.git
+[submodule "corsika-lago-portlet"]
+	path = corsika-lago-portlet
+	url = https://github.com/csgf/corsika-lago-portlet.git
+[submodule "aleph-portlet"]
+	path = aleph-portlet
+	url = https://github.com/csgf/aleph-portlet.git
