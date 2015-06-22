@@ -40,6 +40,7 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Application services
 
+   mpi-portlet/docs/index
    mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
    octave2-portlet/docs/index
