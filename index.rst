@@ -24,7 +24,7 @@ The documentation is organized in the following sections:
  
 .. _core-docs:
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Core Services
 
    eToken/docs/index
