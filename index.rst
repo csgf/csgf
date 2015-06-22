@@ -40,27 +40,20 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Application services
 
-   "hello world!"
-   sequential
    mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
-   cmsquares
    octave2-portlet/docs/index
    r-portlet/docs/index
-   earth sciences
    wrf-portlet/docs/index
    aleph-portlet/docs/index
    corsika-lago-portlet/docs/index
    nuclemd-portlet/docs/index
    clustalw-portlet/docs/index
-   grideeg
    picalc-portlet/docs/index
    trodan-portlet/docs/index
    iort-portlet/docs/index
    cloudapps-portlet/docs/index
    mycloud-portlet/docs/index
-   molon
-   pidadmin
    astra-portlet/docs/index 
    sonification-portlet/docs/index
    semantic-search-portlet/docs/index
@@ -73,7 +66,7 @@ The documentation is organized in the following sections:
 .. _app-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: Mobile
+   :caption: Mobile appliances services
 
    semantic-search-app/docs/index
    dchrp-ecsg-mobile/docs/index
