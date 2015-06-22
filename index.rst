@@ -40,7 +40,7 @@ The documentation is organized in the following sections:
 .. _app-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: Application services
+   :caption: Web Applications
 
    mpi-portlet/docs/index
    mi-parallel-portlet/docs/index
@@ -61,15 +61,13 @@ The documentation is organized in the following sections:
    sonification-portlet/docs/index
    semantic-search-portlet/docs/index
    parallel-semantic-search-portlet/docs/index
-   scoap3-harvester-api/docs/index
-   semantic-search-api/docs/index
    knowledge-base-portlet/docs/index
 
 
 .. _mobile-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: Mobile appliances services
+   :caption: Mobile Apps
 
    semantic-search-app/docs/index
    dchrp-ecsg-mobile/docs/index
@@ -78,16 +76,15 @@ The documentation is organized in the following sections:
 .. _api-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: API appliances services
+   :caption: API Services
 
-   semantic-search-app/docs/index
-   dchrp-ecsg-mobile/docs/index
-   earthserver-sg-mobile/docs/index
-
+   scoap3-harvester-api/docs/index
+   semantic-search-api/docs/index
 
 
 .. _training-docs:
 .. toctree::
    :maxdepth: 2
    :caption: Training materials
-
+ 
+   training-materials/docs/index
