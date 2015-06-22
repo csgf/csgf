@@ -100,3 +100,6 @@
 [submodule "application-registry-portlet"]
 	path = application-registry-portlet
 	url = https://github.com/csgf/application-registry-portlet.git
+[submodule "semantic-search-app"]
+	path = semantic-search-app
+	url = https://github.com/csgf/semantic-search-app.git
