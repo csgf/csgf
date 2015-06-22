@@ -12,6 +12,8 @@ The documentation is organized in the following sections:
 * :ref:`insta-docs`
 * :ref:`core-docs`
 * :ref:`app-docs`
+* :ref:`mobile-docs`
+* :ref:`api-docs`
 * :ref:`training-docs`
 
 
@@ -24,7 +26,7 @@ The documentation is organized in the following sections:
  
 .. _core-docs:
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :caption: Core Services
 
    eToken/docs/index
@@ -64,7 +66,7 @@ The documentation is organized in the following sections:
    knowledge-base-portlet/docs/index
 
 
-.. _app-docs:
+.. _mobile-docs:
 .. toctree::
    :maxdepth: 2
    :caption: Mobile appliances services
@@ -73,7 +75,16 @@ The documentation is organized in the following sections:
    dchrp-ecsg-mobile/docs/index
    earthserver-sg-mobile/docs/index
 
-     
+.. _api-docs:
+.. toctree::
+   :maxdepth: 2
+   :caption: API appliances services
+
+   semantic-search-app/docs/index
+   dchrp-ecsg-mobile/docs/index
+   earthserver-sg-mobile/docs/index
+
+
 
 .. _training-docs:
 .. toctree::
