@@ -7,6 +7,8 @@ The CSGF is open source and released under the Apache 2.0 license. All code is a
 
 The documentation is organized in the following sections:
 
+
+* Introduction (da scrivere)
 * :ref:`insta-docs`
 * :ref:`core-docs`
 * :ref:`app-docs`
@@ -25,7 +27,6 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Core Services
 
-   the grid & cloud engine
    eToken/docs/index
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
@@ -37,7 +38,7 @@ The documentation is organized in the following sections:
 .. _app-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: Applications
+   :caption: Application services
 
    "hello world!"
    sequential
