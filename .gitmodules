@@ -3,7 +3,7 @@
 	url = https://github.com/csgf/abinitdm-portlet.git
 [submodule "knowledge-base-portlet"]
 	path = knowledge-base-portlet
-	url = https://github.com/csgf/knowledge-base-portlet.git
+	url = https://github.com/csgf/knowledge-base-portlet
 [submodule "glibrary"]
 	path = glibrary
 	url = https://github.com/csgf/glibrary.git
@@ -88,3 +88,6 @@
 [submodule "aleph-portlet"]
 	path = aleph-portlet
 	url = https://github.com/csgf/aleph-portlet.git
+[submodule "myjobs-portlet"]
+	path = myjobs-portlet
+	url = https://github.com/csgf/myjobs-portlet.git
