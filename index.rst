@@ -30,6 +30,8 @@ The documentation is organized in the following sections:
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
    federated-login-ext/docs/index
+   application-registry-portlet/docs/index
+   myjobs-portlet/docs/index
    sgmon/docs/index  
 
 .. _app-docs:
@@ -63,7 +65,9 @@ The documentation is organized in the following sections:
    semantic-search-portlet/docs/index
    parallel-semantic-search-portlet/docs/index
    scoap3-harvester-api/docs/index
-   semantic-search-api/docs/index   
+   semantic-search-api/docs/index
+   knowledge-base-portlet/docs/index
+     
 
 .. _training-docs:
 .. toctree::
