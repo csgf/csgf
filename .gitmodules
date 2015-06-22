@@ -97,3 +97,6 @@
 [submodule "earthserver-sg-mobile"]
 	path = earthserver-sg-mobile
 	url = https://github.com/csgf/earthserver-sg-mobile.git
+[submodule "application-registry-portlet"]
+	path = application-registry-portlet
+	url = https://github.com/csgf/application-registry-portlet.git
