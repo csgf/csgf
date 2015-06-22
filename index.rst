@@ -67,6 +67,16 @@ The documentation is organized in the following sections:
    scoap3-harvester-api/docs/index
    semantic-search-api/docs/index
    knowledge-base-portlet/docs/index
+
+
+.. _app-docs:
+.. toctree::
+   :maxdepth: 2
+   :caption: Mobile
+
+   dchrp-ecsg-mobile/docs/index
+   earthserver-sg-mobile/docs/index
+
      
 
 .. _training-docs:

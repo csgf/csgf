@@ -91,3 +91,9 @@
 [submodule "myjobs-portlet"]
 	path = myjobs-portlet
 	url = https://github.com/csgf/myjobs-portlet.git
+[submodule "dchrp-ecsg-mobile"]
+	path = dchrp-ecsg-mobile
+	url = https://github.com/csgf/dchrp-ecsg-mobile.git
+[submodule "earthserver-sg-mobile"]
+	path = earthserver-sg-mobile
+	url = https://github.com/csgf/earthserver-sg-mobile.git
