@@ -9,9 +9,13 @@ The documentation is organized in the following sections:
 
 
 * Introduction 
+  
   This section provides an introduction on the CSGF, including its global architecture
+  
 * :ref:`insta-docs`
+  
   This section provides a step-bt-step guide to install and configure a server hosting a CSGF-based Science Gateway
+  
 * :ref:`core-docs`
 * :ref:`web-docs`
 * :ref:`mobile-docs`
