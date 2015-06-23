@@ -59,21 +59,8 @@ The documentation is organized in the following sections:
         corsika-lago-portlet/docs/index
         iort-portlet/docs/index
         knowledge-base-portlet/docs/index
-
         mpi-portlet/docs/index
         mi-parallel-portlet/docs/index
-
-
-.. _mobile-docs:
-.. toctree::
-	:maxdepth: 2
-	:caption: Mobile Apps
-
-	aginfra-sg-mobile/docs/index
-	dchrp-ecsg-mobile/docs/index
-	earthserver-sg-mobile/docs/index
-	semantic-search-app/docs/index
-
         mycloud-portlet/docs/index
         nuclemd-portlet/docs/index
         octave2-portlet/docs/index
@@ -85,6 +72,17 @@ The documentation is organized in the following sections:
         trodan-portlet/docs/index
         wrf-portlet/docs/index
 
+
+
+.. _mobile-docs:
+.. toctree::
+	:maxdepth: 2
+	:caption: Mobile Apps
+
+	aginfra-sg-mobile/docs/index
+	dchrp-ecsg-mobile/docs/index
+	earthserver-sg-mobile/docs/index
+	semantic-search-app/docs/index
 
 
 .. _api-docs:
