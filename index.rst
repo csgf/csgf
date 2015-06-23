@@ -11,7 +11,7 @@ The documentation is organized in the following sections:
 * Introduction (da scrivere)
 * :ref:`insta-docs`
 * :ref:`core-docs`
-* :ref:`app-docs`
+* :ref:`web-docs`
 * :ref:`mobile-docs`
 * :ref:`api-docs`
 * :ref:`training-docs`
@@ -38,7 +38,7 @@ The documentation is organized in the following sections:
    sgmon/docs/index  
 
 
-.. _app-docs:
+.. _web-docs:
 .. toctree::
    :maxdepth: 2
    :caption: Web Applications
