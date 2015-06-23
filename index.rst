@@ -51,26 +51,26 @@ The documentation is organized in the following sections:
 	:maxdepth: 4
 	:caption: Web Application
 
-abinitdm-portlet/docs/index
-aleph-portlet/docs/index
-astra-portlet/docs/index
-cloudapps-portlet/docs/index
-clustalw-portlet/docs/index
-corsika-lago-portlet/docs/index
-iort-portlet/docs/index
-knowledge-base-portlet/docs/index
-mpi-portlet/docs/index
-mi-parallel-portlet/docs/index
-mycloud-portlet/docs/index
-nuclemd-portlet/docs/index
-octave2-portlet/docs/index
-parallel-semantic-search-portlet/docs/index
-picalc-portlet/docs/index
-r-portlet/docs/index
-semantic-search-portlet/docs/index
-sonification-portlet/docs/index
-trodan-portlet/docs/index
-wrf-portlet/docs/index
+        abinitdm-portlet/docs/index
+        aleph-portlet/docs/index
+        astra-portlet/docs/index
+        cloudapps-portlet/docs/index
+        clustalw-portlet/docs/index
+        corsika-lago-portlet/docs/index
+        iort-portlet/docs/index
+        knowledge-base-portlet/docs/index
+        mpi-portlet/docs/index
+        mi-parallel-portlet/docs/index
+        mycloud-portlet/docs/index
+        nuclemd-portlet/docs/index
+        octave2-portlet/docs/index
+        parallel-semantic-search-portlet/docs/index
+        picalc-portlet/docs/index
+        r-portlet/docs/index
+        semantic-search-portlet/docs/index
+        sonification-portlet/docs/index
+        trodan-portlet/docs/index
+        wrf-portlet/docs/index
 
 
 .. _mobile-docs:

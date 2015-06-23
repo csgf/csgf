@@ -14,3 +14,5 @@ Sections below explain how to install a configure a Science Gateway and all its 
 .. toctree::
    :maxdepth: 2
    :caption: Installation and configuration of the development environment
+
+   development-enviroment
