@@ -16,6 +16,8 @@ The documentation is organized in the following sections:
 	This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
 * :ref:`web-docs`
 	This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
+* :ref:`web-docs2`
+	This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`mobile-docs`
 	This section provides the apps for mobile appliances which are part of the CSGF.
 * :ref:`api-docs`
@@ -59,6 +61,13 @@ The documentation is organized in the following sections:
         corsika-lago-portlet/docs/index
         iort-portlet/docs/index
         knowledge-base-portlet/docs/index
+
+
+.. _web-docs2:
+.. toctree::
+	:maxdepth: 4
+	:caption: Web Application 2
+
         mpi-portlet/docs/index
         mi-parallel-portlet/docs/index
         mycloud-portlet/docs/index
