@@ -35,12 +35,12 @@ The documentation is organized in the following sections:
    glibrary/docs/index
    jsaga-adaptor-rocci/docs/index
    myjobs-portlet/docs/index
-   sgmon/docs/index  
+   sgmon/docs/index
 
 
 .. _web-docs:
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Web Applications
 
    abinitdm-portlet/docs/index 
