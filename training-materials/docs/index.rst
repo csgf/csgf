@@ -1,5 +1,6 @@
-Training materials
-===================================
+==================
+TRAINING MATERIALS
+==================
 
 Sections below explain how to install a configure a Science Gateway and all its components 
 
