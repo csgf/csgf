@@ -29,11 +29,11 @@ The documentation is organized in the following sections:
    :maxdepth: 4
    :caption: Core Services
 
-   eToken/docs/index
-   glibrary/docs/index
-   jsaga-adaptor-rocci/docs/index
-   federated-login-ext/docs/index
    application-registry-portlet/docs/index
+   glibrary/docs/index
+   eToken/docs/index
+   federated-login-ext/docs/index
+   jsaga-adaptor-rocci/docs/index
    myjobs-portlet/docs/index
    sgmon/docs/index  
 
@@ -43,26 +43,26 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Web Applications
 
-   mpi-portlet/docs/index
-   mi-parallel-portlet/docs/index
    abinitdm-portlet/docs/index 
-   octave2-portlet/docs/index
-   r-portlet/docs/index
-   wrf-portlet/docs/index
    aleph-portlet/docs/index
-   corsika-lago-portlet/docs/index
-   nuclemd-portlet/docs/index
-   clustalw-portlet/docs/index
-   picalc-portlet/docs/index
-   trodan-portlet/docs/index
-   iort-portlet/docs/index
-   cloudapps-portlet/docs/index
-   mycloud-portlet/docs/index
    astra-portlet/docs/index 
+   clustalw-portlet/docs/index
+   cloudapps-portlet/docs/index
+   corsika-lago-portlet/docs/index
+   iort-portlet/docs/index
+   knowledge-base-portlet/docs/index
+   mi-parallel-portlet/docs/index
+   mpi-portlet/docs/index
+   mycloud-portlet/docs/index
+   nuclemd-portlet/docs/index
+   octave2-portlet/docs/index
+   parallel-semantic-search-portlet/docs/index
+   picalc-portlet/docs/index
+   r-portlet/docs/index
    sonification-portlet/docs/index
    semantic-search-portlet/docs/index
-   parallel-semantic-search-portlet/docs/index
-   knowledge-base-portlet/docs/index
+   trodan-portlet/docs/index
+   wrf-portlet/docs/index
 
 
 .. _mobile-docs:
@@ -70,9 +70,9 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Mobile Apps
 
-   semantic-search-app/docs/index
    dchrp-ecsg-mobile/docs/index
    earthserver-sg-mobile/docs/index
+   semantic-search-app/docs/index
 
 .. _api-docs:
 .. toctree::
