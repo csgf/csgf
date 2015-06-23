@@ -14,10 +14,12 @@ The documentation is organized in the following sections:
 	This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
 * :ref:`core-docs`
 	This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
+* :ref:`app-docs`
+	This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`web-docs`
 	This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`mobile-docs`
-        This section provides the apps for mobile appliances which are part of the CSGF.
+  This section provides the apps for mobile appliances which are part of the CSGF.
 * :ref:`api-docs`
 	This section provides some APIs to use some of the CSGF services.
 * :ref:`training-docs`
@@ -44,6 +46,14 @@ The documentation is organized in the following sections:
    myjobs-portlet/docs/index
    OpenIdConnectLiferay/docs/index
    sgmon/docs/index
+
+
+.. _app-docs:
+.. toctree::
+   :maxdepth: 4
+   :caption: App Test Services
+
+	 abinitdm-portlet/docs/index
 
 
 .. _web-docs:
