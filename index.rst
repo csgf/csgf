@@ -27,9 +27,10 @@ The documentation is organized in the following sections:
 .. toctree::
    :maxdepth: 2
    :caption: Installation and configuration
-   
-   installation-configuration/docs/index   
- 
+
+   installation-configuration/docs/index
+
+
 .. _core-docs:
 .. toctree::
    :maxdepth: 4
@@ -44,10 +45,11 @@ The documentation is organized in the following sections:
    OpenIdConnectLiferay/docs/index
    sgmon/docs/index
 
+
 .. _web-docs:
 .. toctree::
    :maxdepth: 4
-   :caption: Core Services
+   :caption: Test
 
    abinitdm-portlet/docs/index
    aleph-portlet/docs/index
@@ -70,6 +72,7 @@ The documentation is organized in the following sections:
    trodan-portlet/docs/index
    wrf-portlet/docs/index
 
+
 .. _mobile-docs:
 .. toctree::
    :maxdepth: 2
@@ -80,6 +83,7 @@ The documentation is organized in the following sections:
    earthserver-sg-mobile/docs/index
    semantic-search-app/docs/index
 
+
 .. _api-docs:
 .. toctree::
    :maxdepth: 2
@@ -88,9 +92,10 @@ The documentation is organized in the following sections:
    scoap3-harvester-api/docs/index
    semantic-search-api/docs/index
 
+
 .. _training-docs:
 .. toctree::
    :maxdepth: 2
    :caption: Training materials
-   
+
    training-materials/docs/index
