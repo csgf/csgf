@@ -28,7 +28,7 @@ The documentation is organized in the following sections:
 	:maxdepth: 2
 	:caption: Installation and configuration
 
-	application-registry-portlet/docs/index
+	installation-configuration/docs/index
 
 
 .. _core-docs:
