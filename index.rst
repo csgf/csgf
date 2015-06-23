@@ -23,6 +23,12 @@ The documentation is organized in the following sections:
 * :ref:`training-docs`
 	This section contains a collection of training materials for developers, including the instructions about how to setup the CSGF development environment.
 
+.. _insta-docs:
+.. toctree::
+	:maxdepth: 2
+	:caption: Installation and configuration
+
+	application-registry-portlet/docs/index
 
 
 .. _core-docs:
@@ -43,7 +49,7 @@ The documentation is organized in the following sections:
 .. _web-docs:
 .. toctree::
 	:maxdepth: 4
-	:caption: Test
+	:caption: Web Application
 
 abinitdm-portlet/docs/index
 aleph-portlet/docs/index
