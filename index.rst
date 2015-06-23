@@ -70,6 +70,7 @@ The documentation is organized in the following sections:
    :maxdepth: 2
    :caption: Mobile Apps
 
+   aginfra-sg-mobile/docs/index
    dchrp-ecsg-mobile/docs/index
    earthserver-sg-mobile/docs/index
    semantic-search-app/docs/index
