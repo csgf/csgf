@@ -62,7 +62,6 @@ The documentation is organized in the following sections:
 
         mpi-portlet/docs/index
         mi-parallel-portlet/docs/index
-        mycloud-portlet/docs/index
 
 
 .. _mobile-docs:
@@ -75,6 +74,7 @@ The documentation is organized in the following sections:
 	earthserver-sg-mobile/docs/index
 	semantic-search-app/docs/index
 
+        mycloud-portlet/docs/index
         nuclemd-portlet/docs/index
         octave2-portlet/docs/index
         parallel-semantic-search-portlet/docs/index
