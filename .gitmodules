@@ -106,3 +106,6 @@
 [submodule "aginfra-sg-mobile"]
 	path = aginfra-sg-mobile
 	url = https://github.com/csgf/aginfra-sg-mobile.git
+[submodule "OpenIdConnectLiferay"]
+	path = OpenIdConnectLiferay
+	url = https://github.com/csgf/OpenIdConnectLiferay.git
