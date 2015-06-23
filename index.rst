@@ -16,8 +16,6 @@ The documentation is organized in the following sections:
 	This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
 * :ref:`web-docs`
 	This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
-* :ref:`web-docs-app`
-	Continuing section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`mobile-docs`
 	This section provides the apps for mobile appliances which are part of the CSGF.
 * :ref:`api-docs`
@@ -63,10 +61,16 @@ The documentation is organized in the following sections:
         knowledge-base-portlet/docs/index
 
 
-.. _web-docs-app:
+
+.. _mobile-docs:
 .. toctree::
-	:maxdepth: 4
-	:caption: Web Application doc 
+	:maxdepth: 2
+	:caption: Mobile Apps
+
+	aginfra-sg-mobile/docs/index
+	dchrp-ecsg-mobile/docs/index
+	earthserver-sg-mobile/docs/index
+	semantic-search-app/docs/index
 
         mpi-portlet/docs/index
         mi-parallel-portlet/docs/index
@@ -81,16 +85,6 @@ The documentation is organized in the following sections:
         trodan-portlet/docs/index
         wrf-portlet/docs/index
 
-
-.. _mobile-docs:
-.. toctree::
-	:maxdepth: 2
-	:caption: Mobile Apps
-
-	aginfra-sg-mobile/docs/index
-	dchrp-ecsg-mobile/docs/index
-	earthserver-sg-mobile/docs/index
-	semantic-search-app/docs/index
 
 
 .. _api-docs:
