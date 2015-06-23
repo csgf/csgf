@@ -43,6 +43,17 @@ The documentation is organized in the following sections:
    myjobs-portlet/docs/index
    sgmon/docs/index
 
+.. _mobile-docs:
+.. toctree::
+   :maxdepth: 2
+   :caption: Mobile Apps
+
+   aginfra-sg-mobile/docs/index
+   dchrp-ecsg-mobile/docs/index
+   earthserver-sg-mobile/docs/index
+   semantic-search-app/docs/index
+
+
 .. _web-docs:
 .. toctree::
    :maxdepth: 4
@@ -68,16 +79,6 @@ The documentation is organized in the following sections:
    sonification-portlet/docs/index
    trodan-portlet/docs/index
    wrf-portlet/docs/index
-
-.. _mobile-docs:
-.. toctree::
-   :maxdepth: 2
-   :caption: Mobile Apps
-
-   aginfra-sg-mobile/docs/index
-   dchrp-ecsg-mobile/docs/index
-   earthserver-sg-mobile/docs/index
-   semantic-search-app/docs/index
 
 .. _api-docs:
 .. toctree::
