@@ -107,5 +107,5 @@ The documentation is organized in the following sections:
 .. toctree::
    :maxdepth: 2
    :caption: Training materials
- 
-   training-materials/docs/index
+   
+    training-materials/docs/index
