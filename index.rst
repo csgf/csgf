@@ -30,9 +30,9 @@ The documentation is organized in the following sections:
    :caption: Core Services
 
    application-registry-portlet/docs/index
+   eToken/docs/index
    federated-login-ext/docs/index
    glibrary/docs/index
-   eToken/docs/index
    jsaga-adaptor-rocci/docs/index
    myjobs-portlet/docs/index
    sgmon/docs/index  
@@ -51,8 +51,8 @@ The documentation is organized in the following sections:
    corsika-lago-portlet/docs/index
    iort-portlet/docs/index
    knowledge-base-portlet/docs/index
-   mi-parallel-portlet/docs/index
    mpi-portlet/docs/index
+   mi-parallel-portlet/docs/index
    mycloud-portlet/docs/index
    nuclemd-portlet/docs/index
    octave2-portlet/docs/index
