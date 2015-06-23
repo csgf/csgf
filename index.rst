@@ -12,27 +12,27 @@ The documentation is organized in the following sections:
   
   This section provides an introduction on the CSGF, including its global architecture
   
-* :ref:`insta-docs`
+	* :ref:`insta-docs`
   
   This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
   
-* :ref:`core-docs`
+	* :ref:`core-docs`
 
   This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
 
-* :ref:`web-docs`
+	* :ref:`web-docs`
 
   This section provides all the applications that have been integrated in the Science Gateways powered by the CSGF.
 
-* :ref:`mobile-docs`
+	* :ref:`mobile-docs`
 
   This section provides the apps for mobile appliances which are part of the CSGF.
 
-* :ref:`api-docs`
+	* :ref:`api-docs`
 
   This section provides some APIs to use some of the CSGF services.
 
-* :ref:`training-docs`
+	* :ref:`training-docs`
 
 
   This section contains a collection of training materials for developers, including the instructions about how to setup the CSGF development environment.
@@ -56,7 +56,6 @@ The documentation is organized in the following sections:
    jsaga-adaptor-rocci/docs/index
    myjobs-portlet/docs/index
    sgmon/docs/index
-
 
 .. _web-docs:
 .. toctree::
@@ -84,7 +83,6 @@ The documentation is organized in the following sections:
    trodan-portlet/docs/index
    wrf-portlet/docs/index
 
-
 .. _mobile-docs:
 .. toctree::
    :maxdepth: 2
@@ -103,10 +101,9 @@ The documentation is organized in the following sections:
    scoap3-harvester-api/docs/index
    semantic-search-api/docs/index
 
-
 .. _training-docs:
 .. toctree::
    :maxdepth: 2
    :caption: Training materials
    
-    training-materials/docs/index
+   training-materials/docs/index
