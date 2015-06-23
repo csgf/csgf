@@ -3,10 +3,10 @@ Installation and configuration of the development environment
 *************************************************************
 
 ===========================
-Liferay Bundle Installation 
+Liferay Bundle Installation
 ===========================
 
-* Download Liferay Bundle 6.1.1-ce-ga2 for Glassfish from `here http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip/download`_
+* Download Liferay Bundle 6.1.1-ce-ga2 for Glassfish from `here <http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-glassfish-6.1.1-ce-ga2-20120731132656558.zip/download>`_
 
 * Unzip the Liferay Bundle in the folder you prefer.
 
@@ -51,7 +51,7 @@ Command start-domain executed successfully.
 tail -f $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/logs/server.log
 }}}
 
-* References:  Official instructions (the example is for Tomcat only) 
+* References:  Official instructions (the example is for Tomcat only)
 http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Quick%20Installation%20Instructions
 
 ======================================
@@ -59,7 +59,7 @@ MySQL - Installation and Configuration
 ======================================
 In case you have alreadya MySQL server in your system, you can skip this step just verifying that your version is < 5.6 due to an incompatibility issue between newer MySQL versions and the jdbc-connector.jar library provided with the current version of Liferay bundle.
 
-* Install `MySQL http://dev.mysql.com/downloads/`_ (MySQL Community Server). You could skip the subscription to the ORACLE Web Login.
+* Install `MySQL <http://dev.mysql.com/downloads/>`_ (MySQL Community Server). You could skip the subscription to the ORACLE Web Login.
 
 ==== DB_MACOSX: ====
 Instructions are available inside the README.txt file. Select the DMG file and execute the two pkgs icons from the terminal.app execute: sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
@@ -121,7 +121,7 @@ GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'l
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
 }}}
 
-=================== 
+===================
 Liferay Plugins SDK
 ===================
 
@@ -166,7 +166,7 @@ ant deploy
 Successfully autodeployed : LIFERAY_HOME/glassfish-3.1.2/domains/domain1/autodeploy/hello-world-portlet.|#]
 }}}
 
-=========== 
+===========
 Grid Engine
 ===========
 
@@ -177,7 +177,7 @@ $LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1
 
 *To create the database and the tables; download from here  http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download the UsersTrackingDB.sql file and execute:
 {{{
-mysql -u root < UsersTrackingDB/UsersTrackingDB.sql 
+mysql -u root < UsersTrackingDB/UsersTrackingDB.sql
 }}}
 
 In case the users tracking database already exists, uncomment the line:
@@ -230,7 +230,7 @@ Please refer to the [[http://docs.oracle.com/cd/E18930_01/html/821-2416/giubb.ht
 =====================
 EUGRIDPMA and VOMSDIR
 =====================
-Each access to any distributed infrastructure requires well defined authentication and authorization mechanisms. Most of Grid infrastructures are making use of the [[http://en.wikipedia.org/wiki/Grid_Security_Infrastructure|GSI]]. This security mechanism relies on X509 digital certificates provided by entities named Certification Authorities which themselves are using X509 certificates. The CAs are normally registered by the [[http://www.igtf.net|IGTF]] a body to establish common policies and guidelines between its Policy Management Authorities (PMAs). The CAs act as an independent trusted third party for both subscribers and relying parties within the infrastructure.  
+Each access to any distributed infrastructure requires well defined authentication and authorization mechanisms. Most of Grid infrastructures are making use of the [[http://en.wikipedia.org/wiki/Grid_Security_Infrastructure|GSI]]. This security mechanism relies on X509 digital certificates provided by entities named Certification Authorities which themselves are using X509 certificates. The CAs are normally registered by the [[http://www.igtf.net|IGTF]] a body to establish common policies and guidelines between its Policy Management Authorities (PMAs). The CAs act as an independent trusted third party for both subscribers and relying parties within the infrastructure.
 In order to setup CA certificates, it is necessary to perform one of the following instructions. RPM based Linux distributions may try the first approach (Linux systems); the othe platforms must use the second approach (Other systems).
 
 * Linux systems
@@ -255,7 +255,7 @@ VPN Setup to get the access to the eTokenserver
 
 The eToken server is the responsible to deliver grid proxy certificate to the GridEngine starting form Robot Certificates stored into an eToken USB key.
 For security purposes is not possible to access directly the eTokenServer. For porltet developers it is possible to open a VPN connection.
-In order to get the necessary certificates you have to send us a  
+In order to get the necessary certificates you have to send us a
 [[mailto:sg-licence@ct.infn.it?subject=Request eTokenserver VPN account&body=Please provide me access to the eTokenserver VPN|request]]
 
 
@@ -263,7 +263,7 @@ In order to get the necessary certificates you have to send us a
 
 The VPN connection information will be released in OpenVPN format, together with the necessary certificate and a password.
 
-For Mac users we may suggest  [[http://code.google.com/p/tunnelblick/|Tunnelblick]] for MacOSX platforms.
+For Mac users we may suggest  [[http://code.google.com/p/tunnelblick/|Tunnelblick for MacOSX platforms.
 There is also this [[http://youtu.be/z2U1-5y0Q8I|video]] showing how to setup the VPN from the configuration files sent by us.
 For other platforms like Linux we suggest to install [[http://openvpn.net| OpenVPN]] client and then execute from the same directory holding the certificate:
 
@@ -292,7 +292,7 @@ Development
 MultiInfrastructureJobSubmission multiInfrastructureJobSubmission = new MultiInfrastructureJobSubmission("jdbc:mysql://localhost/userstracking","tracking_user","usertracking");
 }}}
 
-In the portlet examples the constructor call lies inside the *submitJob* method 
+In the portlet examples the constructor call lies inside the *submitJob* method
 
 === Integrated Development Environment (IDE) ===
 We recommend [[https://netbeans.org|NetBeans]] as IDE to develop portlets and other Liferay plugins. In order to create Liferay plugins you can use the [[https://contrib.netbeans.org/portalpack/|Plugin Portal Pack]] extension of NetBeans or configure the plugin to use the Liferay SDK

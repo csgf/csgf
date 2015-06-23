@@ -2,7 +2,7 @@
 TRAINING MATERIALS
 ==================
 
-Sections below explain how to install a configure a Science Gateway and all its components 
+Sections below explain how to install a configure a Science Gateway and all its components
 
 * Installation and configuration of the development environment
 * Creation of a simple parameterised portlet
@@ -13,6 +13,4 @@ Sections below explain how to install a configure a Science Gateway and all its 
 .. _envar-docs:
 .. toctree::
    :maxdepth: 2
-   :caption: Installation and configuration of the development environment 
-   
-   development-enviroment
+   :caption: Installation and configuration of the development environment
