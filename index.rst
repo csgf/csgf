@@ -32,7 +32,6 @@ The documentation is organized in the following sections:
 
   This section provides some APIs to use some of the CSGF services.
 
-
 * :ref:`training-docs`
 
 
