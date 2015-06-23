@@ -30,9 +30,9 @@ The documentation is organized in the following sections:
    :caption: Core Services
 
    application-registry-portlet/docs/index
+   federated-login-ext/docs/index
    glibrary/docs/index
    eToken/docs/index
-   federated-login-ext/docs/index
    jsaga-adaptor-rocci/docs/index
    myjobs-portlet/docs/index
    sgmon/docs/index  
@@ -46,8 +46,8 @@ The documentation is organized in the following sections:
    abinitdm-portlet/docs/index 
    aleph-portlet/docs/index
    astra-portlet/docs/index 
-   clustalw-portlet/docs/index
    cloudapps-portlet/docs/index
+   clustalw-portlet/docs/index
    corsika-lago-portlet/docs/index
    iort-portlet/docs/index
    knowledge-base-portlet/docs/index
@@ -59,8 +59,8 @@ The documentation is organized in the following sections:
    parallel-semantic-search-portlet/docs/index
    picalc-portlet/docs/index
    r-portlet/docs/index
-   sonification-portlet/docs/index
    semantic-search-portlet/docs/index
+   sonification-portlet/docs/index
    trodan-portlet/docs/index
    wrf-portlet/docs/index
 
