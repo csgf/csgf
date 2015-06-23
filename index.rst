@@ -18,7 +18,7 @@ This section provides a step-by-step guide to install and configure a server hos
   
 * :ref:`core-docs`
 
-This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway
+This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
 
 * :ref:`web-docs`
 
