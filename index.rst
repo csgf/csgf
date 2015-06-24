@@ -26,7 +26,7 @@ The documentation is organized in the following sections:
 .. _insta-docs:
 .. toctree::
 	:maxdepth: 2
-	:caption: Installation and configuration
+	:caption: INSTALLATION AND CONFIGURAION
 
 	installation-configuration/docs/index
 
@@ -34,7 +34,7 @@ The documentation is organized in the following sections:
 .. _core-docs:
 .. toctree::
 	:maxdepth: 4
-	:caption: Core Services
+	:caption: CORE SERVICES
 
 	application-registry-portlet/docs/index
 	eToken/docs/index
@@ -49,7 +49,7 @@ The documentation is organized in the following sections:
 .. _web-docs:
 .. toctree::
 	:maxdepth: 4
-	:caption: Web Application
+	:caption: WEB APPLICATIONS
 
         abinitdm-portlet/docs/index
         aleph-portlet/docs/index
@@ -77,7 +77,7 @@ The documentation is organized in the following sections:
 .. _mobile-docs:
 .. toctree::
 	:maxdepth: 2
-	:caption: Mobile Apps
+	:caption: MOBILE APPS
 
 	aginfra-sg-mobile/docs/index
 	dchrp-ecsg-mobile/docs/index
@@ -88,7 +88,7 @@ The documentation is organized in the following sections:
 .. _api-docs:
 .. toctree::
 	:maxdepth: 2
-	:caption: API Services
+	:caption: API SERVICES
 
 	scoap3-harvester-api/docs/index
 	semantic-search-api/docs/index
@@ -97,6 +97,6 @@ The documentation is organized in the following sections:
 .. _training-docs:
 .. toctree::
 	:maxdepth: 2
-	:caption: Training materials
+	:caption: TRAINING MATERIALS
 
 	training-materials/docs/index
