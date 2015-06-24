@@ -8,7 +8,7 @@ The CSGF is open source and released under the Apache 2.0 license. All code is a
 The documentation is organized in the following sections:
 
 
-* Introduction
+* INTRODUCTION
 	This section provides an introduction on the CSGF, including its global architecture
 * :ref:`insta-docs`
 	This section provides a step-by-step guide to install and configure a server hosting a CSGF-based Science Gateway.
