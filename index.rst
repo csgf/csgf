@@ -1,8 +1,8 @@
 Catania Science Gateway Framework Documentation
 ===============================================
 
-.. _GITHUB: https://github.com/csgf/
-The CSGF is open source and released under the Apache 2.0 license. All code is available on GITHUB_
+.. _GitHub: https://github.com/csgf/
+The CSGF is open source and released under the Apache 2.0 license. All code is available on GitHub_
 
 
 The documentation is organized in the following sections:
@@ -15,7 +15,7 @@ The documentation is organized in the following sections:
 * :ref:`core-docs`
 	This section includes the documentation of all the core services of the CSGF.
 * :ref:`web-docs`
-	This section includes the documentation of all the applications that have been integrated in the Science Gateways powered by the CSGF.
+	This section includes the documentation of all the web applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`mobile-docs`
 	This section includes the documentation of the apps for mobile appliances which are part of the CSGF.
 * :ref:`api-docs`
@@ -26,7 +26,7 @@ The documentation is organized in the following sections:
 .. _insta-docs:
 .. toctree::
 	:maxdepth: 2
-	:caption: INSTALLATION AND CONFIGURAION
+	:caption: INSTALLATION AND CONFIGURATION
 
 	installation-configuration/docs/index
 
