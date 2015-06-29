@@ -9,31 +9,37 @@ Installation and configuration of the development environment
 * Unzip the Liferay Bundle in the folder you prefer.
 
 * set the LIFERAY_HOME env variable to the folder containg your Liferay Bundle:
-{{{
-export LIFERAY_HOME=/Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2
-}}}
+
+::
+
+	export LIFERAY_HOME=/Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2
+
 
 * set the executable permission to all binary file in glassfish bin folder:
-.. code:: bash
 
-chmod +x glassfish-3.1.2/bin/*
+::
+
+	chmod +x glassfish-3.1.2/bin/*
 
 * start the domain using the following command:
-.. code:: bash
-$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
+
+::
+
+	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
 
 You should have an output like the following:
 
-.. code:: bash
-------------------------------------------------------------------------------------------
-RicMac:bin Macbook$ $LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
-Waiting for domain1 to start ......
-Successfully started the domain : domain1
-domain  Location: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1
-Log File: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1/logs/server.log
-Admin Port: 4848
-Command start-domain executed successfully.
-------------------------------------------------------------------------------------------
+::
+
+	------------------------------------------------------------------------------------------
+	RicMac:bin Macbook$ $LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
+	Waiting for domain1 to start ......
+	Successfully started the domain : domain1
+	domain  Location: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1
+	Log File: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1/logs/server.log
+	Admin Port: 4848
+	Command start-domain executed successfully.
+	------------------------------------------------------------------------------------------
 
 * Open a browser window to http://localhost:8080/ This procedure will take a while during the first connection. At the end you should get the following interface:
 
@@ -45,9 +51,9 @@ Command start-domain executed successfully.
 
 * To check the Liferay log file:
 
-.. code:: bash
+::
 
-tail -f $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/logs/server.log
+	tail -f $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/logs/server.log
 
 * References:  Official instructions (the example is for Tomcat only)
 
@@ -65,52 +71,54 @@ Instructions are available inside the README.txt file. Select the DMG file and e
 
 Add the PATH to the .profile:
 
-.. code:: bash
+::
 
-export PATH=$PATH:/usr/local/mysql/bin
+	export PATH=$PATH:/usr/local/mysql/bin
 
 
 Start the service
 
-.. code:: bash
+::
 
-RicMac:liferay-portal-6.1.1-ce-ga2 Macbook$ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
-Password:
-Starting MySQL database server
+	RicMac:liferay-portal-6.1.1-ce-ga2 Macbook$ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
+	Password:
+	Starting MySQL database server
 
 ==== DB_LINUX: ====
 
 On L5/6 it is possible to install MySQL with:
 
-.. code:: bash
+::
 
-yum install mysql-server
+	yum install mysql-server
 
 Then the follow commands will enable mysql to start at boot and startup the mysql daemon process
 
-.. code:: bash
-# chkconfig mysqld on
-# /etc/init.d/mysqld start
-}}}
+::
+
+	# chkconfig mysqld on
+	# /etc/init.d/mysqld start
 
 
 * generate the portal-ext.properties file:
 
-.. code:: bash
-cat <<EOF > $LIFERAY_HOME/portal-ext.properties
-jdbc.default.driverClassName=com.mysql.jdbc.Driver
-jdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-jdbc.default.username=liferayadmin
-jdbc.default.password=liferayadmin
-EOF
+
+::
+	cat <<EOF > $LIFERAY_HOME/portal-ext.properties
+	jdbc.default.driverClassName=com.mysql.jdbc.Driver
+	jdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
+	jdbc.default.username=liferayadmin
+	jdbc.default.password=liferayadmin
+	EOF
 
 * create Liferay database
 
-.. code:: bash
-mysql -u root
-CREATE USER 'liferayadmin' IDENTIFIED BY 'liferayadmin';
-CREATE DATABASE lportal;
-GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'liferayadmin';
+::
+
+	mysql -u root
+	CREATE USER 'liferayadmin' IDENTIFIED BY 'liferayadmin';
+	CREATE DATABASE lportal;
+	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'liferayadmin';
 
 * Download the mysql-connector from http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
 
