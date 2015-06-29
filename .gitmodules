@@ -112,3 +112,6 @@
 [submodule "grid-and-cloud-engine"]
 	path = grid-and-cloud-engine
 	url = https://github.com/csgf/grid-and-cloud-engine.git
+[submodule "glibrary-repo-browser-portlet"]
+	path = glibrary-repo-browser-portlet
+	url = https://github.com/csgf/glibrary-repo-browser-portlet.git

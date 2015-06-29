@@ -16,3 +16,6 @@ Sections below explain how to install a configure a Science Gateway and all its 
    :caption: Installation and configuration of the development environment
 
    development-enviroment
+   MyFirstPortlet
+   GridPortlet
+   CollectionPortlet
