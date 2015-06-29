@@ -48,6 +48,7 @@ The documentation is organized in the following sections:
 	eToken/docs/index
 	federated-login-ext/docs/index
 	glibrary/docs/index
+        grid-and-cloud-engine/docs/index
 	jsaga-adaptor-rocci/docs/index
 	myjobs-portlet/docs/index
 	OpenIdConnectLiferay/docs/index

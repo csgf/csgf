@@ -109,3 +109,6 @@
 [submodule "OpenIdConnectLiferay"]
 	path = OpenIdConnectLiferay
 	url = https://github.com/csgf/OpenIdConnectLiferay.git
+[submodule "grid-and-cloud-engine"]
+	path = grid-and-cloud-engine
+	url = https://github.com/csgf/grid-and-cloud-engine.git
