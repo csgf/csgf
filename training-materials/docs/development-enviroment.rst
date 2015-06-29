@@ -65,9 +65,15 @@ In case you have alreadya MySQL server in your system, you can skip this step ju
 
 * Install `MySQL <http://dev.mysql.com/downloads/>`_ (MySQL Community Server). You could skip the subscription to the ORACLE Web Login.
 
-==== DB_MACOSX: ====
-Instructions are available inside the README.txt file. Select the DMG file and execute the two pkgs icons from the terminal.app execute: sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
-(your password will be requested)
+
+**DB_MACOSX:**
+
+Instructions are available inside the README.txt file.
+Select the DMG file and execute the two pkgs icons from the terminal.app execute: 
+
+::
+	sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
+	(your password will be requested)
 
 Add the PATH to the .profile:
 
@@ -104,12 +110,14 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 
 
 ::
+
 	cat <<EOF > $LIFERAY_HOME/portal-ext.properties
 	jdbc.default.driverClassName=com.mysql.jdbc.Driver
 	jdbc.default.url=jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 	jdbc.default.username=liferayadmin
 	jdbc.default.password=liferayadmin
 	EOF
+
 
 * create Liferay database
 
@@ -124,7 +132,8 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 
 *! Restart Liferay; this will cause Liferay to identify the DB and create new tables and data.
 
-.. code:: bash
+::
+
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1 && \
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
 
@@ -141,39 +150,46 @@ You may try clicking [[https://downloads.sourceforge.net/project/lportal/Liferay
 
 * A small test could be the use of:
 
-.. code:: bash
-cd $LIFERAY_SDK_HOME/portlets/
-./create.sh hello-world "Hello-World"
+
+::
+
+	cd $LIFERAY_SDK_HOME/portlets/
+	./create.sh hello-world "Hello-World"
 
 Pay attention that the create.sh file normally does not have enabled the execution permission
 
-.. code:: bash
-chmod +x ./create.sh
+::
+
+	chmod +x ./create.sh
 
 * This should create the 'hello-world' portlet folder.
 
 * Enter in hello-world-portlet folder:
 
-.. code:: bash
-cd  hello-world-portlet
+::
+
+	cd  hello-world-portlet
 
 * Excute deploy command
 
-.. code:: bash
-ant deploy
+::
+
+	ant deploy
 
 *  Liferay log file should contain some lines like this:
 
 Successfully autodeployed :
  
-.. code:: bash
-LIFERAY_HOME/glassfish-3.1.2/domains/domain1/autodeploy/hello-world-portlet.|#]
+::
+
+	LIFERAY_HOME/glassfish-3.1.2/domains/domain1/autodeploy/hello-world-portlet.|#]
 
 **Grid Engine**
 
-.. code:: bash
-*Stop Liferay
-$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1
+::
+
+	Stop Liferay
+	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1
 
 *To create the database and the tables; download from here  http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download the UsersTrackingDB.sql file and execute:
 
@@ -189,12 +205,12 @@ Pay attention the line above will destroy the existing database.
 
 * Download Grid Engine and JSAGA libraries from sourceforge and copy them in temporary folder:
 
-.. code:: bash
-#
-# Use curl <namefile> > <namefile> in case you do not have wget
-#
-wget http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip/download
+::
 
+	#
+	# Use curl <namefile> > <namefile> in case you do not have wget
+	#
+	wget http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip/download
 
 
 * Unzip the GridEngine_v1.5.9.zip inside the temporary folder:
@@ -241,10 +257,11 @@ On linux systems it is possible to install the IGTF CA certificates executing th
 
  Execute the following instructions to create the /etc/grid-security/certificates and /etc/grid-security/vomsdir folders:
 
-.. code:: bash
-sudo mkdir -p /etc/grid-security
-curl http://grid.ct.infn.it/cron_files/grid_settings.tar.gz > grid_settings.tar.gz
-sudo tar xvfz grid_settings.tar.gz -C /etc/grid-security/
+::
+
+	sudo mkdir -p /etc/grid-security
+	curl http://grid.ct.infn.it/cron_files/grid_settings.tar.gz > grid_settings.tar.gz
+	sudo tar xvfz grid_settings.tar.gz -C /etc/grid-security/
 
 (!)  Archives below will expire timely so that they should be kept updated
 (!!) vomsdir must be updated with VO you are going to support
@@ -266,19 +283,21 @@ For Mac users we may suggest  [[http://code.google.com/p/tunnelblick/|Tunnelblic
 There is also this [[http://youtu.be/z2U1-5y0Q8I|video]] showing how to setup the VPN from the configuration files sent by us.
 For other platforms like Linux we suggest to install [[http://openvpn.net| OpenVPN]] client and then execute from the same directory holding the certificate:
 
-.. code:: bash
+::
+
 	openvpn --config <received_conf_file>.ovpn
 
 
 Please notice that on CentOS7 VPN will not work by default since provided VPN certificates are encrypted using MD5 and SHA1 which are no longer supported on CentOS 7. To be able to use the VPN certificate anyway it is possible to enable Md5 support on CentOS7; just executing as root:
 
-.. code:: bash
-cat >> /usr/lib/systemd/system/NetworkManager.service <<EOF
-[Service]
-Environment="OPENSSL_ENABLE_MD5_VERIFY=1 NSS_HASH_ALG_SUPPORT=+MD5"
-EOF
-systemctl daemon-reload
-systemctl restart NetworkManager.service
+::
+
+	cat >> /usr/lib/systemd/system/NetworkManager.service <<EOF
+	[Service]
+	Environment="OPENSSL_ENABLE_MD5_VERIFY=1 NSS_HASH_ALG_SUPPORT=+MD5"
+	EOF
+	systemctl daemon-reload
+	systemctl restart NetworkManager.service
 
 
 Further details about this issue are available [[ http://software-engineer.gatsbylee.com/centos7openvpn-verify-error-depth0-errorcertificate-signature-failure/ | here ]] (Thanks to [[mailto:manuel.rodriguez.pascual@gmail.com|Manuel Rodriguez Pascual]])

@@ -14,15 +14,16 @@ Before to start with the portlet template it is important to understand the inte
 
 
 ::
-    Class GenericPortlets{
-    init(PortletConfig);
-    processAction(ActionRequest, ActionResponse);
-    render (RenderRequest, RenderResponse);
-    destroy();
-    **doView**(Request, Response);
-    **doEdit**(Request, Response);
-    **doHelp**(Request, Response);
-    }
+
+	Class GenericPortlets{
+	init(PortletConfig);
+	processAction(ActionRequest, ActionResponse);
+	render (RenderRequest, RenderResponse);
+	destroy();
+	**doView**(Request, Response);
+	**doEdit**(Request, Response);
+	**doHelp**(Request, Response);
+	}
 
 - The above figure depicts the whole lifecycle of a portlet; the most important loop foresees the exchange between the **ProcessAction** and **Render** methods, respectively responsible of the action selected by the user in the input forms and then the interface to show back to the user as consequence of the user action.
 
@@ -54,6 +55,7 @@ JSP -> Java
 Inside the JSP code place all JAVA' input fields into a web form:
 
 ::
+
     <form action="<portlet:actionURL portletMode="view"> 
     <portlet:param name="param_name_1" value="paramvalue 1" />
     ... 
@@ -69,6 +71,7 @@ Inside the JSP code place all JAVA' input fields into a web form:
 Inside the JAVA code get the input interface values with:
 
 ::
+
     doView/doHelp/doEdit(RenderRequest  request,…
     // To obtain the parameter just set …
     String param_i= request.getParameter("param_name_i");
@@ -153,9 +156,7 @@ If built process complet successfully , you can see in Liferay Log somethins lik
 .. image:: figures-and-documents/figure5.png
    :align: left
 
-========================
-Customize myFirstPortlet
-========================
+**Customize myFirstPortlet**
 
 This section describes the steps to create a new portlet from the template provided by myFirst-portlet.
 

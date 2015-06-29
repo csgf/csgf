@@ -74,10 +74,8 @@ Now you should see the status of the job that you have submitted previously, see
 .. image:: figures-and-documents/figure7.png
    :align: left	
 
-When Status column from RUNNING becomes  you can download the job output by clicking on this icon.
 
-.. image:: figures-and-documents/figure15.png
-   :align: left	
+When Status column from RUNNING becomes  you can download the job output by clicking on this icon  .. image:: figures-and-documents/figure15.png
 
 *Customize mi-hostname-portlet*
 
