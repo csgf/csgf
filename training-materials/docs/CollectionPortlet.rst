@@ -31,7 +31,7 @@ First of all, make sure that your Liferay server is correctly up and running, th
  
 - Then, open your browser at http://localhost:8080 click Add > More in the GILDA menu, click on Add button to add this new portlet. following picture shows the correctly result:
 
-.. image:: figures-and-documents/figure8.png
+.. image:: figures-and-documents/figura8.png
 
 **Now you should be able to submit your first parallel job on a distributed Grid infrastructure**, insert an example text and add a brief example description, then click on the "Submit" button.
 
@@ -40,10 +40,10 @@ To check the job status and to retrieve the output when the collection will be D
 **Perform a parallel application**
 
 - Select the collection type from the ComboBox:
-.. image:: figures-and-documents/figure9.png
+.. image:: figures-and-documents/figura9.png
 
 - Insert the number of tasks that compose this collection:
-.. image:: figures-and-documents/figure10.png
+.. image:: figures-and-documents/figura10.png
 
 - Clickin on the "OK" button, the page will be automatically updated with a number of input text fields equal to the number of tasks entered, fill these input text fields with some command, like hostname, ls, echo, etc. Optionally, you can also specify argments for that commands into the relatives text fileds.
 
