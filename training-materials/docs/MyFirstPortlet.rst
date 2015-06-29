@@ -5,9 +5,7 @@ MyFirstPortlet
 This complete example of portlet code contains anything you need to develop your own first portlet . For this reason developers can use it as a template source code to customize according to their own specific requirements.
 Following instructions provide a step by step guide explaining how to customize the template in order to obtain in the fastest possible way a full featured web application.
 
-================
-Portlet Workflow
-================
+**Portlet Workflow**
 
 Before to start with the portlet template it is important to understand the internal &nbsp;workflow of a standard portlet (JSR168/286). The picture below well depicts the entire workflow among the different portlet components. Components in the figure are simply class methods of the GenericPortlet Java class provided by the portlet SDK.
 
@@ -15,8 +13,6 @@ Before to start with the portlet template it is important to understand the inte
    :align: left
 			
 .. code:: java
-			
-
 Class GenericPortlets{
  init(PortletConfig);
  processAction(ActionRequest, ActionResponse);
@@ -29,76 +25,78 @@ Class GenericPortlets{
 
 - The above figure depicts the whole lifecycle of a portlet; the most important loop foresees the exchange between the **ProcessAction** and **Render** methods, respectively responsible of the action selected by the user in the input forms and then the interface to show back to the user as consequence of the user action.
 
-=============
-Portlet Modes
-=============	
+**Portlet Modes**
 		
 Standard portlets opreate in 3 different modes: **VIEW**, **EDIT**, **HELP**
 
 
-* <strong>VIEW</strong>&nbsp;generates the normal user interface
-* <strong>EDIT</strong>&nbsp;used to store portlet preferences
-* <strong>HELP</strong>&nbsp;show usage instruction
+* **VIEW**: generates the normal user interface
+* **EDIT**: used to store portlet preferences
+* **HELP**: show usage instruction
 
-The <strong>Render</strong> method is responsible to call a different <strong>GenericPortlet </strong> class method accordingly to the current portlet mode as shown in the figure:
+The **Render** method is responsible to call a different **GenericPortlet** class method accordingly to the current portlet mode as shown in the figure:
 
 .. image:: figures-and-documents/figure2.png
    :align: left	
           	
-		<strong>Render</strong>&nbsp;method will call then&nbsp;<strong>GenericPortlet</strong>&nbsp;methods:&nbsp;<strong>doView</strong>,&nbsp;<strong>doHelp</strong>,&nbsp;<strong>doEdit</strong><br />
+		**Render** method will call then **GenericPortlet**methods: **doView** ,&nbsp;<strong>doHelp</strong>,&nbsp;<strong>doEdit</strong><br />
 			Each method is responsible to present the appropriate user interface accordingly to the user action and portlet status.</p>
 
-#####
-Data Exchange between Java and JSP pages
-#####
-	
-			During the user interaction there is a continuous data exchange between the&nbsp;<strong>GenericPortlet</strong>&nbsp;class and the&nbsp;<strong>JSP</strong>&nbsp;pages responsible of the user interface presentation. Following paragraphs show how exchange data between jps pages and the Java code.</p>
+
+
+**Data Exchange between Java and JSP pages**
+
+During the user interaction there is a continuous data exchange between the&nbsp;<strong>GenericPortlet</strong>&nbsp;class and the&nbsp;<strong>JSP</strong>&nbsp;pages responsible of the user interface presentation. Following paragraphs show how exchange data between jps pages and the Java code.</p>
 			
-<strong>JSP -&gt; Java</strong></h4>
-		<p>
-			Inside the JSP code place all JAVA' input fields into a web&nbsp;<strong>form</strong>:</p>
-		<p>
-			<code>&lt;<strong>form</strong>&nbsp;action="&lt;portlet:actionURL&nbsp;<strong>portletMode</strong>="view"&gt;&nbsp;<br />
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;portlet:param&nbsp;<strong>name="param_name_1" value="paramvalue 1" </strong>/&gt;<br />
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp;<br />
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;portlet:param&nbsp;<strong>name="param_name_n" value="paramvalue n"</strong>/&gt;&nbsp;<br />
-			&nbsp; ...<br />
-			&nbsp; &lt;<strong>input</strong> … /&gt;<br />
-			&nbsp; &lt;<strong>input</strong> … /&gt;</code></p>
-		<p>
-			<code>&nbsp; &lt;input type="submit" … /&gt;<br />
-			&lt;/<strong>form</strong>&gt;</code></p>
-		<p>
-			Inside the JAVA code get the input interface values with:</p>
-		<p>
-			<code><strong>doView</strong>/<strong>doHelp</strong>/<strong>doEdit(RenderRequest&nbsp; request,…</strong><br />
-			&nbsp; // To obtain the parameter just set …<br />
-			&nbsp; <strong>String param_i= request.getParameter("param_name_i");</strong></code></p>
-		<h4>
-			<code><strong>Java -&gt; JSP</strong></code></h4>
-		<p>
-			Inside the JAVA code get the input interface values with:</p>
-		<p>
-			<code><strong>doView</strong>/<strong>doHelp</strong>/<strong>doEdit(RenderRequest&nbsp; request,…</strong><br />
-			&nbsp; // To obtain the parameter just set …<br />
-			&nbsp;&nbsp;<strong>String param_i= request.setAttribute("param_name_i","param_value_i");</strong></code></p>
-		<div>
-			Inside the JSP page load parameter values with:</div>
-		<div>
-			<p>
-				<code>&lt;%<br />
-				&nbsp; &nbsp;// To load variables from PortletClass …<br />
-				%&gt;<br />
-				&lt;jsp:useBean id="<strong>param_name_k</strong>" class="&lt;<strong>variable type k</strong>&gt;" scope="<strong>request</strong>"/&gt;<br />
-				<br />
-				&lt;%<br />
-				&nbsp; &nbsp;// To reference a paramvalue<br />
-				%&gt;<br />
-				Reference paramenter_name' value with: &lt;%=<strong>param_name_k</strong>%&gt;</code></p>
-		</div>
-############################		
-GenericPortlet main workflow
-############################
+JSP -> Java
+
+Inside the JSP code place all JAVA' input fields into a web form:
+
+  ::
+
+<form action="<portlet:actionURL portletMode="view"> 
+               <portlet:param name="param_name_1" value="paramvalue 1" />
+               ... 
+               <portlet:param name="param_name_n" value="paramvalue n"/> 
+   ...
+   <input … />
+   <input … />
+
+  <input type="submit" … />
+ </form>
+
+
+Inside the JAVA code get the input interface values with:
+
+::
+doView/doHelp/doEdit(RenderRequest  request,…
+   // To obtain the parameter just set …
+   String param_i= request.getParameter("param_name_i");
+
+
+Java -> JSP
+
+Inside the JAVA code get the input interface values with:
+
+::
+doView/doHelp/doEdit(RenderRequest  request,…
+   // To obtain the parameter just set …
+   String param_i= request.setAttribute("param_name_i","param_value_i");
+
+Inside the JSP page load parameter values with:
+
+::
+<%
+    // To load variables from PortletClass …
+ %>
+ <jsp:useBean id="param_name_k" class="<variable type k>" scope="request"/>
+ 
+ <%
+    // To reference a paramvalue
+ %>
+ Reference paramenter_name' value with: <%=param_name_k%>
+
+**GenericPortlet main workflow**
 		
 	The following picture shows the internal workflow inside the GenericPortlet class while the user interacts with the WebApplication:</p>
 			
@@ -116,28 +114,30 @@ The loop starts with the&nbsp;<strong>Init()</strong>&nbsp;method then the entir
 		
 
 
-=====================
-Deploy myFirstPortlet
-=====================
+**Deploy myFirstPortlet**
 
 In this section we can see how the steps that you have to follow to deploy the&nbsp;<strong>myFirst-portlet</strong>&nbsp;in your liferay bundle installation.&nbsp;</p>
 
 1. Move in your Liferay plugin SDK potlets folder
 
+::
 cd $LIFERAY_SDK_HOME/portlets/
 
 2. Download myFirst-portlet source code through svn command:
 
+::
 svn checkout svn://svn.code.sf.net/p/ctsciencegtwys/liferay/trunk/gilda/myFirst-portlet
 
 3. Move into myFirst-portlet/ folder
 
 4. Deploy portlet with the following command (and see LIferay log):
 
+::
 ant deploy
 
 If built process complet successfully , you can see in Liferay Log somethins like this:
 
+::
 Successfully autodeployed : LIFERAY_HOME/glassfish-3.1.2/domains/domain1/autodeploy/myFirst-portlet.|#
 
 5. Open web browser at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>, click on Add &gt; More&gt; CataniaSG &gt; myFirst-portlet.
@@ -168,9 +168,7 @@ Pay attention: the APP_NAME value must be set with the name that you assigned in
 			
 To see the result follow step 5 in previous section changing &nbsp;myFirst-portlet with &lt;your_potlet_name&gt;-portlet</p>
 		
-=======================
-Web application editors
-=======================
+**Web application editors**
 
 This is the right moment to create a project using a high level web application editor like NetBeans or Eclipse.
 Following instructions are valid for **NetBeans**
