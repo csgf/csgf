@@ -115,3 +115,6 @@
 [submodule "glibrary-repo-browser-portlet"]
 	path = glibrary-repo-browser-portlet
 	url = https://github.com/csgf/glibrary-repo-browser-portlet.git
+[submodule "interoperability-demo-portlet"]
+	path = interoperability-demo-portlet
+	url = https://github.com/csgf/interoperability-demo-portlet.git

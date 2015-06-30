@@ -67,6 +67,7 @@ The documentation is organized in the following sections:
         clustalw-portlet/docs/index
         corsika-lago-portlet/docs/index
         glibrary-repo-browser-portlet/docs/index
+        interoperability-demo-portlet/docs/index
         iort-portlet/docs/index
         knowledge-base-portlet/docs/index
         mpi-portlet/docs/index
