@@ -13,11 +13,11 @@ The Catania Science Gateway Framework (CSGF) is fully based on official worldwid
 
 * The `Cryptographic Token Interface Standard <http://www.rsa.com/rsalabs/node.asp?id=2133>`_ (PKCS#11) standard and its Cryptoki implementation;   
 
-* The `Open Grid Forum <http://www.ogf.org>`_  (OGF) `Simple API for Grid Applications <http://www.ogf.org/documents/GFD.90.pdf>`_ (SAGA) standard and its `JSAGA <http://grid.in2p3.fr/jsaga/>`_ implementation.
+* The `Open Grid Forum <http://www.ogf.org>`_  (OGF) `Simple API for Grid Applications <http://www.ogf.org/documents/GFD.90.pdf>`_ (SAGA) standard and its `JSAGA <http://grid.in2p3.fr/jsaga/>`_ implementation;
 
 * The `Open Grid Forum <http://www.ogf.org>`_  (OGF) `Open Cloud Computing Interface <http://occi-wg.org/>`_ (OCCI) standard and its `rOCCI <http://occi-wg.org/2012/04/02/rocci-a-ruby-occi-framework/>`_ implementation.
 
-Science Gateways implemented with the CSGF are built on top of the `Liferay <http://www.liferay.com>`_ portal framework and some useful links about Liferay are listed here:
+Science Gateways implemented with the CSGF are built on top of the `Liferay <http://www.liferay.com>`_ portal framework and some useful links about Liferay are listed here for convenience:
 
 * `Liferay <http://www.liferay.com>`_
  
