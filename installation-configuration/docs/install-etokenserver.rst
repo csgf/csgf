@@ -1,3 +1,7 @@
+***************************
+Installing the eTokenServer
+***************************
+
 For the testing of the Catania Science Gateway, the installation of the eTokenServer is not mandatory. 
 
 You can decide either to:
