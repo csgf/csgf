@@ -2,9 +2,9 @@
 TRAINING MATERIALS
 ==================
 
-By definition, a Science Gateway is a community-developed set of tools, applications, and data that is integrated via a portal or a suite of applications, usually in a graphical user interface, that is further customized to meet the needs of a specific community. 
+By definition, a Science Gateway is "a community-developed set of tools, applications, and data that is integrated via a portal or a suite of applications, usually in a graphical user interface, that is further customized to meet the needs of a specific community". 
 
-The GILDA framework for Science Gateways is fully web-based and adopts official worldwide standards and protocols, through their most common implementations. These are:
+The Catania Science Gateway Framework (CSGF) is fully based on official worldwide standards and protocols, through their most common implementations. These are:
 * The `JSR 168 <http://jcp.org/en/jsr/detail?id=168>`_ and `JSR 286 <http://jcp.org/en/jsr/detail?id=286>`_  standards (also known as "portlet 1.0" and "portlet 2.0" standards);
 
 * The `OASIS <http://www.oasis-open.org/>`_ - `Security Assertion Markup Language <http://saml.xml.org/>`_ (SAML) standard and its  `Shibboleth <http://shibboleth.internet2.edu/>`_ and `SimpleSAMLphp <http://simplesamlphp.org/>`_ implementations;
@@ -15,11 +15,11 @@ The GILDA framework for Science Gateways is fully web-based and adopts official 
 
 * The `Open Grid Forum <http://www.ogf.org>`_  (OGF) `Simple API for Grid Applications <http://www.ogf.org/documents/GFD.90.pdf>`_ (SAGA) standard and its `JSAGA <http://grid.in2p3.fr/jsaga/>`_ implementation.   
 
-The GILDA Science Gateways are built using the `Liferay <http://www.liferay.com>`_ portal framework.
+Science Gateways implemented with the CSGF are built on top of the `Liferay <http://www.liferay.com>`_ portal framework.
 
-The pages linked below provide information about how to install and configure the development environment as well as some examples of basic template portlets that can be further customised/adapted to integrate specific applications in the Science Gateway. 
+The sections linked below provide information about how to install and configure the CSGF development environment as well as some examples of basic template portlets that can be further customised/adapted to integrate specific applications in the Science Gateway. 
 
-In order to profit from this training material, a basic knowledge of the Java programming language is required.
+In order to best profit from this training material, a basic knowledge of the Java programming language is required.
 
 .. _envar-docs:
 .. toctree::
