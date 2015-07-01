@@ -31,7 +31,7 @@ Science Gateways implemented with the CSGF are built on top of the `Liferay <htt
 
 The sections linked below provide information and guidelines about how to install and configure the CSGF development environment as well as some examples of basic template portlets that can be further customised/adapted to integrate specific applications in the Science Gateway. 
 
-In order to best profit from this training material, a basic knowledge of the Java programming language is required.
+Note: in order to best profit from this training material, a knowledge of the Java programming language is required.
 
 .. _envar-docs:
 .. toctree::
