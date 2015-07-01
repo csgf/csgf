@@ -30,6 +30,7 @@ In order to profit from this training material, a basic knowledge of the Java pr
    GridPortlet
    CollectionPortlet
 
+Useful Links
 
 * `Liferay <http://www.liferay.com>`_
  
