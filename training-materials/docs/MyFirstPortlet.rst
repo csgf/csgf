@@ -2,12 +2,19 @@
 Creation of a simple parameterised portlet
 ******************************************
 
-This complete example of portlet code contains anything you need to develop your own first portlet . For this reason developers can use it as a template source code to customize according to their own specific requirements.
+This complete example of portlet code contains anything you need to develop your own first portlet.
+
+For this reason developers can use it as a template source code to customize according to their own specific requirements.
+
 Following instructions provide a step by step guide explaining how to customize the template in order to obtain in the fastest possible way a full featured web application.
 
 **Portlet Workflow**
 
-Before to start with the portlet template it is important to understand the internal &nbsp;workflow of a standard portlet (JSR168/286). The picture below well depicts the entire workflow among the different portlet components. Components in the figure are simply class methods of the GenericPortlet Java class provided by the portlet SDK.
+Before to start with the portlet template it is important to understand the internal workflow of a standard portlet (JSR168/286).
+
+The picture below well depicts the entire workflow among the different portlet components.
+
+Components in the figure are simply class methods of the GenericPortlet Java class provided by the portlet SDK.
 
 .. image:: figures-and-documents/figure1.png
    :align: left
@@ -42,7 +49,7 @@ The **Render** method is responsible to call a different **GenericPortlet** clas
    :align: left	
           	
 
-**Render** method will call then **GenericPortlet**methods: **doView**, **doHelp**, **doEdit**
+**Render** method will call then **GenericPortlet** methods: **doView**, **doHelp**, **doEdit**
 Each method is responsible to present the appropriate user interface accordingly to the user action and portlet status.
 
 
@@ -174,12 +181,14 @@ This section describes the steps to create a new portlet from the template provi
 - Edit the customize.sh file, set the following parameters as you prefer:
 
 	-- AUTH_EMAIL= your@email
+ 
 	-- AUTH_NAME= your name
+	
 	-- AUTH_INSTITUE= your_institute
 
 Pay attention: the APP_NAME value must be set with the name that you assigned in your portlet folder name
 
-- APP_NAME=&lt;your_potlet_name
+- APP_NAME= your_potlet_name
 
 - Run customize.sh script, with 
 
@@ -190,11 +199,12 @@ Pay attention: the APP_NAME value must be set with the name that you assigned in
 - Then delpoy portlet with ant deploy
 		
 			
-To see the result follow step 5 in previous section changing "myFirst-portlet" with "your_potlet_name-portlet"</p>
+To see the result follow step 5 in previous section changing "myFirst-portlet" with "your_potlet_name-portlet"
 		
 **Web application editors**
 
 This is the right moment to create a project using a high level web application editor like NetBeans or Eclipse.
+
 Following instructions are valid for **NetBeans**
 
 - Download Netbeans IDE

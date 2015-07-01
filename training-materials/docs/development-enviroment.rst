@@ -147,7 +147,7 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 	CREATE DATABASE lportal;
 	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'liferayadmin';
 
-* Download the mysql-connector from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download >`_  and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
+* Download the mysql-connector from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download>`_ and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
 
 *! Restart Liferay; this will cause Liferay to identify the DB and create new tables and data.
 
@@ -212,7 +212,9 @@ Pay attention that the create.sh file normally does not have enabled the executi
 	Stop Liferay
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1
 
-*To create the database and the tables; download from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download>`_   the UsersTrackingDB.sql file and execute:
+* To create the database and the tables;
+ 
+ download from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download>`_   the UsersTrackingDB.sql file and execute:
 
 ::
 
@@ -258,9 +260,10 @@ Pay attention the line above will destroy the existing database.
 
 * Startup liferay
 
-:
+::
 
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
+
 
 
 * If you are using a virtual machine, be aware that Glassfish control panel access normally is forbidden from remote. Following commands are necessary to enable it:
@@ -310,12 +313,7 @@ The eToken server is the responsible to deliver grid proxy certificate to the Gr
 
 For security purposes is not possible to access directly the eTokenServer. For porltet developers it is possible to open a VPN connection.
 
-In order to get the necessary certificates you have to send us a
-
-[[mailto:sg-licence@ct.infn.it?subject=Request eTokenserver VPN account&body=Please provide me access to the eTokenserver VPN|request]]
-
-
-
+In order to get the necessary certificates you have to send us a `request <mailto:sg-licence@ct.infn.it?subject=Request eTokenserver VPN account&body=Please provide me access to the eTokenserver VPN>`_
 
 The VPN connection information will be released in OpenVPN format, together with the necessary certificate and a password.
 
@@ -329,7 +327,9 @@ For other platforms like Linux we suggest to install  `OpenVPN <http://openvpn.n
 	openvpn --config <received_conf_file>.ovpn
 
 
-Please notice that on CentOS7 VPN will not work by default since provided VPN certificates are encrypted using MD5 and SHA1 which are no longer supported on CentOS 7. To be able to use the VPN certificate anyway it is possible to enable Md5 support on CentOS7; just executing as root:
+Please notice that on CentOS7 VPN will not work by default since provided VPN certificates are encrypted using MD5 and SHA1 which are no longer supported on CentOS 7. To be able to use the VPN certificate anyway it is possible to enable Md5 support on CentOS7;
+
+just executing as root:
 
 ::
 
@@ -367,6 +367,6 @@ In order to create Liferay plugins you can use the `Plugin Portal Pack <https://
 
 **References**
 
-`Liferay Plugin SDK - How to http://www.liferay.com/it/community/wiki/-/wiki/Main/Plugins+SDK`_
+`Liferay Plugin SDK - How to <http://www.liferay.com/it/community/wiki/-/wiki/Main/Plugins+SDK>`_
 
-`Plugin Guide  http://www.scribd.com/doc/8533275/Liferay-43-Plugins-Guide`_
+`Plugin Guide  <http://www.scribd.com/doc/8533275/Liferay-43-Plugins-Guide>`_
