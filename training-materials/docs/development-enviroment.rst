@@ -45,7 +45,10 @@ You should have an output like the following:
 
 * Open a browser window to http://localhost:8080/ This procedure will take a while during the first connection. At the end you should get the following interface:
 
-{{Screen Shot 2013-06-24 at 10.59.58 AM.png}}
+
+.. image:: figures-and-documents/figure16.png
+   :align: left
+
 
 * Press the 'Finish Configuration' button; it generates the portal' configuration file: 
 
@@ -61,31 +64,36 @@ You should have an output like the following:
 
 	tail -f $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/logs/server.log
 
-* References:  Official instructions (the example is for Tomcat only)
 
-http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Quick%20Installation%20Instructions
+* References:  `Official instructions (the example is for Tomcat only) <http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Quick%20Installation%20Instructions>`_
 
 **MySQL - Installation and Configuration**
 
 In case you have alreadya MySQL server in your system, you can skip this step just verifying that your version is 
 < 5.6 due to an incompatibility issue between newer MySQL versions and the jdbc-connector.jar library provided with the current version of Liferay bundle.
 
-* Install `MySQL <http://dev.mysql.com/downloads/>`_ (MySQL Community Server). You could skip the subscription to the ORACLE Web Login.
+* Install `MySQL <http://dev.mysql.com/downloads/>`_ (MySQL Community Server). 
+
+You could skip the subscription to the ORACLE Web Login.
 
 
 **DB_MACOSX:**
 
 Instructions are available inside the README.txt file.
+
 Select the DMG file and execute the two pkgs icons from the terminal.app execute: 
 
 ::
+
 
 	sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
 	(your password will be requested)
 
 Add the PATH to the .profile:
 
+
 ::
+
 
 	export PATH=$PATH:/usr/local/mysql/bin
 
@@ -93,6 +101,7 @@ Add the PATH to the .profile:
 Start the service
 
 ::
+
 
 	RicMac:liferay-portal-6.1.1-ce-ga2 Macbook$ sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
 	Password:
@@ -106,9 +115,11 @@ On L5/6 it is possible to install MySQL with:
 
 	yum install mysql-server
 
+
 Then the follow commands will enable mysql to start at boot and startup the mysql daemon process
 
 ::
+
 
 	# chkconfig mysqld on
 	# /etc/init.d/mysqld start
@@ -136,7 +147,7 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 	CREATE DATABASE lportal;
 	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'liferayadmin';
 
-* Download the mysql-connector from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download>`_  and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
+* Download the mysql-connector from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download >`_  and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
 
 *! Restart Liferay; this will cause Liferay to identify the DB and create new tables and data.
 
