@@ -1,6 +1,6 @@
-============
-INTRODUCTION
-============
+==================
+TRAINING MATERIALS
+==================
 
 By definition, a Science Gateway is "a community-developed set of tools, applications, and data that is integrated via a portal or a suite of applications, usually in a graphical user interface, that is further customized to meet the needs of a specific community". 
 
