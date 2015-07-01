@@ -31,23 +31,29 @@ You should have an output like the following:
 
 ::
 
-	------------------------------------------------------------------------------------------
+	-----------------------------------------------------------------------------------------------------
 	RicMac:bin Macbook$ $LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
 	Waiting for domain1 to start ......
 	Successfully started the domain : domain1
-	domain  Location: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1
-	Log File: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1/logs/server.log
+	domain  Location: 
+        /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1
+	Log File: 
+        /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/glassfish-3.1.2/domains/domain1/logs/server.log
 	Admin Port: 4848
 	Command start-domain executed successfully.
-	------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------
 
 * Open a browser window to http://localhost:8080/ This procedure will take a while during the first connection. At the end you should get the following interface:
 
 {{Screen Shot 2013-06-24 at 10.59.58 AM.png}}
 
-* Press the 'Finish Configuration' button; it generates the portal' configuration file: /Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/portal-setup-wizard.properties
+* Press the 'Finish Configuration' button; it generates the portal' configuration file: 
 
-* Press the 'Go My Portal' button, agree the conditions, set the new password and password retrival questions. After then you'll be redirected to the Liferay home page.
+	/Users/Macbook/Downloads/liferay-portal-6.1.1-ce-ga2/portal-setup-wizard.properties
+
+* Press the 'Go My Portal' button, agree the conditions, set the new password and password retrival questions. 
+	
+	After then you'll be redirected to the Liferay home page.
 
 * To check the Liferay log file:
 
@@ -61,7 +67,8 @@ http://www.liferay.com/web/guest/community/wiki/-/wiki/Main/Quick%20Installation
 
 **MySQL - Installation and Configuration**
 
-In case you have alreadya MySQL server in your system, you can skip this step just verifying that your version is < 5.6 due to an incompatibility issue between newer MySQL versions and the jdbc-connector.jar library provided with the current version of Liferay bundle.
+In case you have alreadya MySQL server in your system, you can skip this step just verifying that your version is 
+< 5.6 due to an incompatibility issue between newer MySQL versions and the jdbc-connector.jar library provided with the current version of Liferay bundle.
 
 * Install `MySQL <http://dev.mysql.com/downloads/>`_ (MySQL Community Server). You could skip the subscription to the ORACLE Web Login.
 
@@ -72,6 +79,7 @@ Instructions are available inside the README.txt file.
 Select the DMG file and execute the two pkgs icons from the terminal.app execute: 
 
 ::
+
 	sudo /Library/StartupItems/MySQLCOM/MySQLCOM start
 	(your password will be requested)
 
@@ -90,7 +98,7 @@ Start the service
 	Password:
 	Starting MySQL database server
 
-==== DB_LINUX: ====
+**DB_LINUX:**
 
 On L5/6 it is possible to install MySQL with:
 
@@ -128,7 +136,7 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 	CREATE DATABASE lportal;
 	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'liferayadmin';
 
-* Download the mysql-connector from http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
+* Download the mysql-connector from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.4.21/mysql-connector-java-5.1.13.jar/download>`_  and copy it in $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib/
 
 *! Restart Liferay; this will cause Liferay to identify the DB and create new tables and data.
 
@@ -140,10 +148,12 @@ Then the follow commands will enable mysql to start at boot and startup the mysq
 
 **Liferay Plugins SDK**
 
-* Download the SDK from http://www.liferay.com/downloads/liferay-portal/additional-files (Liferay Plugins SDK 6.1 GA 2).
-You may try clicking [[https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.1.1%20GA2/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip?r=http%3A%2F%2Fwww.liferay.com%2Fdownloads%2Fliferay-portal%2Fadditional-files&ts=1369692338&use_mirror=netcologne|here]]
+* Download the SDK from `here <http://www.liferay.com/downloads/liferay-portal/additional-files>`_ (Liferay Plugins SDK 6.1 GA 2).
+
+	You may try clicking `here <https://downloads.sourceforge.net/project/lportal/Liferay%20Portal/6.1.1%20GA2/liferay-plugins-sdk-6.1.1-ce-ga2-20120731132656558.zip?r=http%3A%2F%2Fwww.liferay.com%2Fdownloads%2Fliferay-portal%2Fadditional-files&ts=1369692338&use_mirror=netcologne>`_
 
 * Open the file LIFERAY_SDK_HOME/build.properties, uncomment 'glassfish' settings and setup the proper file path values. Comment out the default enabled tomcat settings.
+
 * Pay attention that in LIFERAY_SDK_HOME/build.properties there are also settings to specify which java compiler will be used by ant; in case of troubles try to setup properly the  'javac.compiler' option; for instance switchin to 'modern' value.
 
 * Be sure your system has installed 'ant' and 'ecj' orherwise install them.
@@ -178,7 +188,7 @@ Pay attention that the create.sh file normally does not have enabled the executi
 
 *  Liferay log file should contain some lines like this:
 
-Successfully autodeployed :
+	Successfully autodeployed :
  
 ::
 
@@ -191,15 +201,17 @@ Successfully autodeployed :
 	Stop Liferay
 	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin stop-domain domain1
 
-*To create the database and the tables; download from here  http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download the UsersTrackingDB.sql file and execute:
+*To create the database and the tables; download from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download>`_   the UsersTrackingDB.sql file and execute:
 
-.. code:: bash
-mysql -u root < UsersTrackingDB/UsersTrackingDB.sql
+::
+
+	mysql -u root < UsersTrackingDB/UsersTrackingDB.sql
 
 In case the users tracking database already exists, uncomment the line:
 
-.. code:: bash
--- drop database userstracking;
+::
+
+	-- drop database userstracking;
 
 Pay attention the line above will destroy the existing database.
 
@@ -215,41 +227,54 @@ Pay attention the line above will destroy the existing database.
 
 * Unzip the GridEngine_v1.5.9.zip inside the temporary folder:
 
-.. code:: bash
-unzip GridEngine_v1.5.9.zip
+::
+
+	unzip GridEngine_v1.5.9.zip
+
 
 * Move the config file from the temporary folder to the Liferay config folder:
 
-.. code:: bash
-mv <temp folder path>/GridEngine_v1.5.9/GridEngineLogConfig.xml $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/config
+::
+
+	mv <temp folder path>/GridEngine_v1.5.9/GridEngineLogConfig.xml $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/config
+
 
 * Move all the other files to the Liferay lib folder
 
-.. code:: bash
-mv <temp folder path>/GridEngine_v1.5.9/* $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib
+::
+
+	mv <temp folder path>/GridEngine_v1.5.9/* $LIFERAY_HOME/glassfish-3.1.2/domains/domain1/lib
 
 * Startup liferay
 
-.. code:: bash
-$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
+:
+
+	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin start-domain domain1
 
 
 * If you are using a virtual machine, be aware that Glassfish control panel access normally is forbidden from remote. Following commands are necessary to enable it:
 
-.. code:: bash
-$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin --host localhost --port 4848 change-admin-password
-$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin enable-secure-admin
+::
+
+	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin --host localhost --port 4848 change-admin-password
+	$LIFERAY_HOME/glassfish-3.1.2/bin/asadmin enable-secure-admin
 
 
-Please refer to the [[http://docs.oracle.com/cd/E18930_01/html/821-2416/giubb.html|Glassfish Administration Guide]] for more details
+Please refer to the `Glassfish Administration Guide <http://docs.oracle.com/cd/E18930_01/html/821-2416/giubb.html>`_ for more details
 
 
 **EUGRIDPMA and VOMSDIR**
 
-Each access to any distributed infrastructure requires well defined authentication and authorization mechanisms. Most of Grid infrastructures are making use of the [[http://en.wikipedia.org/wiki/Grid_Security_Infrastructure|GSI]]. This security mechanism relies on X509 digital certificates provided by entities named Certification Authorities which themselves are using X509 certificates. The CAs are normally registered by the [[http://www.igtf.net|IGTF]] a body to establish common policies and guidelines between its Policy Management Authorities (PMAs). The CAs act as an independent trusted third party for both subscribers and relying parties within the infrastructure.
+Each access to any distributed infrastructure requires well defined authentication and authorization mechanisms. 
+
+Most of Grid infrastructures are making use of the `GSI <http://en.wikipedia.org/wiki/Grid_Security_Infrastructure>`_. This security mechanism relies on X509 digital certificates provided by entities named Certification Authorities which themselves are using X509 certificates.
+
+The CAs are normally registered by the `IGTF <http://www.igtf.net>`_ a body to establish common policies and guidelines between its Policy Management Authorities (PMAs). The CAs act as an independent trusted third party for both subscribers and relying parties within the infrastructure.
+
 In order to setup CA certificates, it is necessary to perform one of the following instructions. RPM based Linux distributions may try the first approach (Linux systems); the othe platforms must use the second approach (Other systems).
 
 * Linux systems
+
 On linux systems it is possible to install the IGTF CA certificates executing the following steps:
 
 
@@ -264,14 +289,18 @@ On linux systems it is possible to install the IGTF CA certificates executing th
 	sudo tar xvfz grid_settings.tar.gz -C /etc/grid-security/
 
 (!)  Archives below will expire timely so that they should be kept updated
+
 (!!) vomsdir must be updated with VO you are going to support
 
 
 **VPN Setup to get the access to the eTokenserver**
 
 The eToken server is the responsible to deliver grid proxy certificate to the GridEngine starting form Robot Certificates stored into an eToken USB key.
+
 For security purposes is not possible to access directly the eTokenServer. For porltet developers it is possible to open a VPN connection.
+
 In order to get the necessary certificates you have to send us a
+
 [[mailto:sg-licence@ct.infn.it?subject=Request eTokenserver VPN account&body=Please provide me access to the eTokenserver VPN|request]]
 
 
@@ -279,9 +308,10 @@ In order to get the necessary certificates you have to send us a
 
 The VPN connection information will be released in OpenVPN format, together with the necessary certificate and a password.
 
-For Mac users we may suggest  [[http://code.google.com/p/tunnelblick/|Tunnelblick for MacOSX platforms.
-There is also this [[http://youtu.be/z2U1-5y0Q8I|video]] showing how to setup the VPN from the configuration files sent by us.
-For other platforms like Linux we suggest to install [[http://openvpn.net| OpenVPN]] client and then execute from the same directory holding the certificate:
+For Mac users we may suggest `Tunnelblick for MacOSX platforms <http://code.google.com/p/tunnelblick/>`_.
+
+There is also this `video <http://youtu.be/z2U1-5y0Q8I>`_ showing how to setup the VPN from the configuration files sent by us.
+For other platforms like Linux we suggest to install  `OpenVPN <http://openvpn.net>`_ client and then execute from the same directory holding the certificate:
 
 ::
 
@@ -300,20 +330,28 @@ Please notice that on CentOS7 VPN will not work by default since provided VPN ce
 	systemctl restart NetworkManager.service
 
 
-Further details about this issue are available [[ http://software-engineer.gatsbylee.com/centos7openvpn-verify-error-depth0-errorcertificate-signature-failure/ | here ]] (Thanks to [[mailto:manuel.rodriguez.pascual@gmail.com|Manuel Rodriguez Pascual]])
+Further details about this issue are available `here <http://software-engineer.gatsbylee.com/centos7openvpn-verify-error-depth0-errorcertificate-signature-failure/>`_  (Thanks to `Manuel Rodriguez Pascual <mailto:manuel.rodriguez.pascual@gmail.com>`_)
 
 **Development**
 
-** WARNING ** For architectural reasons the constructor of GridEngine object must be declared differently than the portlet code written for the production environment. The constructor must be created with:
+**WARNING**
 
-.. code:: bash
-MultiInfrastructureJobSubmission multiInfrastructureJobSubmission = new MultiInfrastructureJobSubmission("jdbc:mysql://localhost/userstracking","tracking_user","usertracking");
+For architectural reasons the constructor of GridEngine object must be declared differently than the portlet code written for the production environment
+
+**The constructor must be created with:**
+
+::
+
+	MultiInfrastructureJobSubmission multiInfrastructureJobSubmission = new MultiInfrastructureJobSubmission
+        ("jdbc:mysql://localhost/userstracking","tracking_user","usertracking");
 
 
 In the portlet examples the constructor call lies inside the *submitJob* method
 
-=== Integrated Development Environment (IDE) ===
-We recommend [[https://netbeans.org|NetBeans]] as IDE to develop portlets and other Liferay plugins. In order to create Liferay plugins you can use the [[https://contrib.netbeans.org/portalpack/|Plugin Portal Pack]] extension of NetBeans or configure the plugin to use the Liferay SDK
+**Integrated Development Environment (IDE)**
+
+We recommend `NetBeans <https://netbeans.org>`_ as IDE to develop portlets and other Liferay plugins.
+In order to create Liferay plugins you can use the `Plugin Portal Pack <https://contrib.netbeans.org/portalpack/>`_ extension of NetBeans or configure the plugin to use the Liferay SDK
 
 
 **References**

@@ -1,5 +1,5 @@
 ************
-GridPortlet
+Creation of a portlet that submits a job
 ************
 
 This page shows a complete example of portlet code contains anything you need to develop your own portlet to submit and run a sequential application.

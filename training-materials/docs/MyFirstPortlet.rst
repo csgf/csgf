@@ -1,5 +1,5 @@
 ************
-MyFirstPortlet
+Creation of a simple parameterised portlet
 ************
 
 This complete example of portlet code contains anything you need to develop your own first portlet . For this reason developers can use it as a template source code to customize according to their own specific requirements.
