@@ -24,7 +24,6 @@ In order to profit from this training material, a basic knowledge of the Java pr
 .. _envar-docs:
 .. toctree::
    :maxdepth: 2
-   :caption:
 
    development-enviroment
    MyFirstPortlet
