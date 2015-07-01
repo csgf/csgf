@@ -17,9 +17,19 @@ The Catania Science Gateway Framework (CSGF) is fully based on official worldwid
 
 * The `Open Grid Forum <http://www.ogf.org>`_  (OGF) `Open Cloud Computing Interface <http://occi-wg.org/>`_ (OCCI) standard and its `rOCCI <http://occi-wg.org/2012/04/02/rocci-a-ruby-occi-framework/>`_ implementation.
 
-Science Gateways implemented with the CSGF are built on top of the `Liferay <http://www.liferay.com>`_ portal framework.
+Science Gateways implemented with the CSGF are built on top of the `Liferay <http://www.liferay.com>`_ portal framework and some useful links about Liferay are listed here:
 
-The sections linked below provide information about how to install and configure the CSGF development environment as well as some examples of basic template portlets that can be further customised/adapted to integrate specific applications in the Science Gateway. 
+* `Liferay <http://www.liferay.com>`_
+ 
+* `Liferay Documentation <http://www.liferay.com/documentation/liferay-portal/6.0/getting-started>`_
+
+* `Liferay Downloads <http://www.liferay.com/downloads/liferay-portal/available-releases>`_
+
+* `Liferay Community <http://www.liferay.com/community/welcome/dashboard>`_
+
+* `Liferay Wiki <http://www.liferay.com/community/wiki>`_
+
+The sections linked below provide information and guidelines about how to install and configure the CSGF development environment as well as some examples of basic template portlets that can be further customised/adapted to integrate specific applications in the Science Gateway. 
 
 In order to best profit from this training material, a basic knowledge of the Java programming language is required.
 
@@ -32,14 +42,4 @@ In order to best profit from this training material, a basic knowledge of the Ja
    GridPortlet
    CollectionPortlet
 
-Useful Links
 
-* `Liferay <http://www.liferay.com>`_
- 
-* `Liferay Documentation <http://www.liferay.com/documentation/liferay-portal/6.0/getting-started>`_
-
-* `Liferay Downloads <http://www.liferay.com/downloads/liferay-portal/available-releases>`_
-
-* `Liferay Community <http://www.liferay.com/community/welcome/dashboard>`_
-
-* `Liferay Wiki <http://www.liferay.com/community/wiki>`_
