@@ -1,6 +1,6 @@
-******************************************
-Configuring Catania Grid Engine on liferay
-******************************************
+**********************************************
+Configuring the Grid & Cloud Engine on Liferay
+**********************************************
 
 Check java version using the following command:
 
@@ -38,9 +38,9 @@ Before starting the installation make sure your liferay domains is stopped.
 
 **Library Dependencies**
 
-Download Grid Engine and JSAGA libraries from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip/download>`_
+Download Grid & Cloud Engine and JSAGA libraries from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip/download>`_
 
-Unzip the GridEngine_v1.5.9.zip:
+Unzip GridEngine_v1.5.9.zip:
 
 ::
 
@@ -71,7 +71,7 @@ Download the attached GridEngineLogConfig.xml `link <https://sourceforge.net/p/c
 
 **Glassfish Configuration**
 
-Restart glassfish server, when server is up access the web administration console:
+Restart the Glassfish server and when the server is up access the web administration console:
 
 [http://sg-server:4848]
 
