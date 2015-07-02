@@ -1,9 +1,9 @@
-******************************************************
-Configuring MySQL Database for the Catania Grid Engine
-******************************************************
+**********************************************************
+Configuring the MySQL Database for the Grid & Cloud Engine
+**********************************************************
 
 
-Let's suppose you already installed mysql server on the machine and you configured the root user and password. If you don't follow the [prerequisites here](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigLportalInMySQL/#prerequisites)
+Let's suppose you already installed the MySQL server on the machine and you configured the root user and password. If you don't follow the [prerequisites here](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigLportalInMySQL/#prerequisites)
 
 Access as root using the password you have just set:
 
