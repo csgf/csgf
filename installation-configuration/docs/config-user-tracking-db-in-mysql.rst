@@ -2,8 +2,7 @@
 Configuring the MySQL Database for the Grid & Cloud Engine
 **********************************************************
 
-Let's suppose you already installed the MySQL server on the machine and you configured the root user and password. If you don't follow the `prerequisites here <./config-lportal-in-mysql>`_
-
+Let's suppose you already installed the MySQL server on the machine and you configured the root user and password. If you don't refers to the :doc:`config-lportal-in-mysql` guide.
 Access as root using the password you have just set:
 
 .. code:: 

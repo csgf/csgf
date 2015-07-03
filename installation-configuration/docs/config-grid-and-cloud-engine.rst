@@ -33,12 +33,12 @@ Create the directory (as liferayadmin)
 MySQL Server Configuration
 ==========================
 
-Remeber that you need to configure the database. You can do that following  :doc:`../config-user-tracking-db-in-mysql` :doc:`./config-user-tracking-db-in-mysql` :doc:`/config-user-tracking-db-in-mysql` :doc:`config-user-tracking-db-in-mysql`
+Remeber that you need to configure the database. You can do that following :doc:`config-user-tracking-db-in-mysql`
 
 
-
-Installation
-============
+================================
+Grid & Cloud Engine Installation
+================================
 
 Before starting the installation make sure your liferay domains is stopped. 
 
@@ -48,8 +48,8 @@ Before starting the installation make sure your liferay domains is stopped.
     Waiting for the domain to stop ......
     Command stop-domain executed successfully.
 
-Library Dependencies
---------------------
+Dependencies
+------------
 
 Download Grid & Cloud Engine and JSAGA libraries from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip>`_
 
