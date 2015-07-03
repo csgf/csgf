@@ -17,7 +17,7 @@ Check java version using the following command:
 
 the version installed should be 1.7, if you have installed a previous one, please update it before to proceed.
 
-As root user, download the `vomsdir.tar.gz <https://raw.githubusercontent.com/csgf/eToken/master/docs/others/vomsdir.tar.gz>`
+As root user, download the `vomsdir.tar.gz <https://raw.githubusercontent.com/csgf/eToken/master/docs/others/vomsdir.tar.gz>`_
 
 .. code:: 
 
@@ -30,9 +30,10 @@ Create the directory (as liferayadmin)
 
 	[liferayadmin@centos6 ~]$ mkdir /tmp/jobOutput/
 
-**MySQL Server Configuration**
+MySQL Server Configuration
+==========================
 
-Remeber that you need to configure the database. You can do that following `this guide <./config-user-tracking-db-in-mysql>`_
+Remeber that you need to configure the database. You can do that following `this guide <./config-user-tracking-db-in-mysql.rst>`_
 
 
 Installation
@@ -70,11 +71,12 @@ Configuration
 
 **LogFile**
 
-Download the attached GridEngineLogConfig.xml `link <https://raw.githubusercontent.com/csgf/eToken/master/docs/others/vomsdir.tar.gz/GridEngineLogConfig.xml>`_, and move this file to the Liferay config folder:
+Download the attached GridEngineLogConfig.xml `link <https://raw.githubusercontent.com/csgf/csgf/master/installation-configuration/docs/figures-and-documents/GridEngineLogConfig.xml>`_, and move this file to the Liferay config folder:
 
 .. code::
 
-	[liferayadmin@centos6 ~]$ mv GridEngineLogConfig.xml /opt/glassfish3/glassfish/domains/liferay/config
+	[liferayadmin@centos6 ~]$ mv GridEngineLogConfig.xml \ 
+	/opt/glassfish3/glassfish/domains/liferay/config
 
 
 
@@ -251,7 +253,7 @@ Finally, you have to create the required JDBC Resources. Select `Resources -> JD
    
    jdbcgehibernatepool JDBC Resource
 
----------------------
+
 Finalize installation
 ---------------------
 
