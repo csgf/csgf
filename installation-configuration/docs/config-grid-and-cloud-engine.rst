@@ -33,7 +33,7 @@ Create the directory (as liferayadmin)
 MySQL Server Configuration
 ==========================
 
-Remeber that you need to configure the database. You can do that following :doc:`this guide <./config-user-tracking-db-in-mysql>`
+Remeber that you need to configure the database. You can do that following :doc:`/config-user-tracking-db-in-mysql`
 
 
 Installation
