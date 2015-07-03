@@ -44,7 +44,7 @@ Verify that your machine has direct and reverse address resolution (check your D
 	Host 1.0.0.10.in-addr.arpa domain name pointer sg-server.yourdomain.foo
 
 
-The full list of the hardware server requirements can be downloaded from :download:`here <figures-and-documents/example.py>`
+The full list of the hardware server requirements can be downloaded from :download:`here <figures-and-documents/Catania_SG_service_list.pdf>`
 
 .. `here <https://github.com/csgf/csgf/blob/master/installation-configuration/docs/figures-and-documents/Catania%20SG%20service%20list.pdf>`_
 
