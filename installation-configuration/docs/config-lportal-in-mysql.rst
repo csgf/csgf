@@ -80,10 +80,12 @@ Add a new user and a new database named lportal. Give the user the privileges to
 	CREATE DATABASE lportal;
 	Query OK, 1 row affected (0.00 sec)
 	
-	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'yourPasswd';
+	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost'
+    IDENTIFIED BY 'yourPasswd';
 	Query OK, 0 rows affected (0.05 sec)
 	
-	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'IPOfsg-server' IDENTIFIED BY 'yourPasswd';
+	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'IPOfsg-server'
+    IDENTIFIED BY 'yourPasswd';
 	Query OK, 0 rows affected (0.05 sec)
 	
 	FLUSH PRIVILEGES;

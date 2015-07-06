@@ -269,13 +269,15 @@ Now you can run the command:
 	"user=liferayadmin:password=liferayadminMySqlPasswrod:\
 	url='jdbc:mysql://sg-database:3306/lportal'" LiferayPool 
 	
-	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin -u liferayadmin create-jdbc-resource \
+	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin -u \
+	liferayadmin create-jdbc-resource \
 	--connectionpoolid LiferayPool jdbc/liferay 
 
 In this way, we are setting a connection pool able to connect to a machine with the hostname **sg-database** using the default port **3306** for the database. In the database there is a table called **lportal** that can be read/write by a user named **liferayadmin** identified by the password **liferayadminMySqlPasswrod**. From now in on we will be able to refer to this resource thanks to the name we assigned: **jdbc/liferay**. In order to configure the database properly, please refer to the [guide](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigLportalInMySQL/).
 
-
-**Create a proxy ajp listener**
+---------------------------
+Create a proxy ajp listener
+---------------------------
 
 In order to bind glassfish with apache, you must create a proxy ajp listener.  After the connector is created, you need to stop the server.  
 
@@ -294,17 +296,15 @@ Now stop the server:
 	Waiting for the domain to stop ..............
 	Command stop-domain executed successfully.
 
-
-
---------------------
+====================
 Liferay Installation
---------------------
-
+====================
 
 Liferay is a web application, and so we need to deploy it on Glassfish. Before the deployment, we need to provide the correct library in Glassfish. 
 
-**Liferay files**
-
+-------------
+Liferay files
+-------------
 
 Considering Liferay needs to use a MySQL database, a driver is needed. Copy the mysql connector in the path:
 
@@ -333,8 +333,9 @@ Now you can copy liferay's jar. Liferay refers to these file as liferay portal d
     ├── portal-service.jar
     └── portlet.jar
     
-
-**Liferay deploy**
+---------------
+Liferay deploy
+---------------
 
 A web application is identified by an archive with extension .war. Download the liferay portal .war from `the Liferay sourceforge repository <http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-6.1.1-ce-ga2-20120731132656558.war>`_
 
@@ -351,7 +352,7 @@ Once you get back the prompt, you can deploy the .war file with the command (sup
 
 	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin -u liferayadmin deploy \
 	--contextroot / --verify=true \
-	--name liferay611cega2 /home/liferayadmin/liferay-portal-6.1.1-ce-ga2-20120731132656558.war
+	--name liferay611cega2 ~/liferay-portal-6.1.1-ce-ga2-20120731132656558.war
 
 You will be asked for the glassfish admin user password. To check the status of the deploy you can refer to the glassfish log file.  
 
@@ -386,8 +387,7 @@ Edit the liferay portal properties file to connect it to the database:
 
 .. code:: bash
 
-    [liferayadmin@sg-server ~]$ vim /opt/glassfish3/glassfish/domains/liferay/applications/\
-    liferay611cega2/WEB-INF/classes/portal-ext.properties
+    vim /opt/glassfish3/glassfish/domains/liferay/applications/liferay611cega2/WEB-INF/classes/portal-ext.properties
 	
 	jdbc.default.jndi.name=jdbc/liferay
 	
@@ -437,11 +437,13 @@ If everything is ok you should find the default liferay instance at:
 
 http://sg-server:8080
 
-------------------
+==================
 Post Installations
-------------------
+==================
 
-**Make glassfish domain start at boot**
+-----------------------------------
+Make glassfish domain start at boot
+-----------------------------------
 
 Edit the rc.local file in order to make glassfish start in case the server reboots:
 
@@ -453,7 +455,9 @@ Edit the rc.local file in order to make glassfish start in case the server reboo
 
 Where you specify that the user **liferayadmin** (and not root) will start the process automatically at boot.
 
-**Install Marketplace Portlet**
+---------------------------
+Install Marketplace Portlet
+---------------------------
 
 Download the `Marketplace portlet <http://sourceforge.net/projects/lportal/files/Liferay%20Plugins/6.1.2%20GA3/marketplace-portlet-6.1.2.4.war>`_ and deploy on the portal using the following command:
 
@@ -463,25 +467,29 @@ Download the `Marketplace portlet <http://sourceforge.net/projects/lportal/files
 
 Check the log file to see if the portlet is correctly deployed, yoiuu should see some line like the following in the server.log file:
 
-.. code:: bash
+.. code:: 
 
     ...
-    [AutoDeploy] Successfully autodeployed : /opt/glassfish3/glassfish/domains/liferay/autodeploy/marketplace-portlet.|#]
+    ...Successfully autodeployed : \
+     /opt/glassfish3/glassfish/domains/liferay/autodeploy/marketplace-portlet.|#]
     ...
 
 In order to use the Marketplace portlet you need to create your own account, please create a new one, if you don't already have it. Then open your portal installation, select *Go to -> Control Panel* from the top right corner and Stro from the left menu. Fill the fields with your Liferay creditials, look for *Web form* and select the free Web Form CE portlet, click on *Purchase* button (this just make availaible this portlet for your Liferay account). Now from the left sied menu select *Purchased* and click the Install button on the Web Form portlet, waits until the installation process ends.
 
----------------
+===============
 Troubleshooting
----------------
+===============
 
-**Glassfish Port**
+--------------
+Glassfish Port
+--------------
 
 If your network is not configured properly you could not be able to start glassfish and you will get this error: 
 
 .. code:: bash
 
-	There is a process already using the admin port 4848 -- it probably is another instance of a GlassFish server.
+	There is a process already using the admin port 4848 -- \
+	it probably is another instance of a GlassFish server.
 	Command start-domain failed.
 
 
@@ -495,8 +503,9 @@ As a good rule, you should set them in the /etc/hosts files as below:
 	...
 	10.0.0.1   sg-server.yourdomain.foo    sg-server
 
-
-**Glassfish Connection Pools**
+--------------------------
+Glassfish Connection Pools
+--------------------------
 
 It is important to configure the connection pools properly. If you don't, Liferay will not be able to start, or it's possible it will still use the database on file, that should not be used on a production server.
 
@@ -557,8 +566,9 @@ In case all the parameters are set correctly try to ping the database:
    
    Liferay Pool Ping test
 
-
-**Liferay Theme not loaded properly** 
+---------------------------------
+Liferay theme not loaded properly
+---------------------------------
 
 If the start page is not loaded properly, before or after the configuration wizard, there could be some files created by liferay directory that have the wrong write permissions. 
 
@@ -585,8 +595,9 @@ and if you have a content like the one above change the owner of the liferay dir
 	drwxr-xr-x. 3 liferayadmin liferayadmin 4096 Mar  4 18:48 liferay
 	drwxr-xr-x. 2 liferayadmin liferayadmin 4096 Feb 28 17:40 xuggle
 
-
-**Maximum Number of file**
+----------------------
+Maximum Number of file
+----------------------
 
 Check what is the maximum number of file the operative system can open:
 
@@ -604,9 +615,9 @@ In case the number is too low set an higher value in the variable:
 	# Controls the maximum number of opened files 
 	fs.file-max=2000000
 
-
-
-**SELinux**
+-------
+SELinux
+-------
 
 In case you are not able to start apache server properly you should check you SELinux configurations.
 
