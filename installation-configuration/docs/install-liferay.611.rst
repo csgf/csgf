@@ -273,7 +273,8 @@ Now you can run the command:
 	liferayadmin create-jdbc-resource \
 	--connectionpoolid LiferayPool jdbc/liferay 
 
-In this way, we are setting a connection pool able to connect to a machine with the hostname **sg-database** using the default port **3306** for the database. In the database there is a table called **lportal** that can be read/write by a user named **liferayadmin** identified by the password **liferayadminMySqlPasswrod**. From now in on we will be able to refer to this resource thanks to the name we assigned: **jdbc/liferay**. In order to configure the database properly, please refer to the [guide](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigLportalInMySQL/).
+In this way, we are setting a connection pool able to connect to a machine with the hostname **sg-database** using the default port **3306** for the database. In the database there is a table called **lportal** that can be read/write by a user named **liferayadmin** identified by the password **liferayadminMySqlPasswrod**. From now in on we will be able to refer to this resource thanks to the name we assigned: **jdbc/liferay**. In order to configure the database properly, please refer to the
+:doc:`config-lportal-in-mysql`.
 
 ---------------------------
 Create a proxy ajp listener
@@ -316,7 +317,7 @@ Considering Liferay needs to use a MySQL database, a driver is needed. Copy the 
 You can download the java connector for your version of mysql server from the `official site <http://dev.mysql.com/downloads/connector/j/>`_ or download `ours <http://sourceforge.net/projects/ctsciencegtwys/files/wiki/mysql-connector-java-5.1.13.jar/download>`_.
 
 
-Now you can copy liferay's jar. Liferay refers to these file as liferay portal dependencies. `Form here <https://sourceforge.net/projects/lportal/files/>`_ you can find the full list of liferay files. There are different dependencies corresponding to the different liferay version. To install *Liferay 6.1.1 CE GA2* download dependencies from `this link <http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-dependencies-6.1.1-ce-ga2-20120731132656558.zip>`. After downloading, extract the archive and copy the jar file into the same path of mysql java connector (see the example below): 
+Now you can copy liferay's jar. Liferay refers to these file as liferay portal dependencies. `From here <https://sourceforge.net/projects/lportal/files/>`_ you can find the full list of liferay files. There are different dependencies corresponding to the different liferay version. To install *Liferay 6.1.1 CE GA2* download dependencies from `this link <http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.1.1%20GA2/liferay-portal-dependencies-6.1.1-ce-ga2-20120731132656558.zip>`_. After downloading, extract the archive and copy the jar file into the same path of mysql java connector (see the example below): 
 
 .. code:: bash
 
@@ -358,7 +359,7 @@ You will be asked for the glassfish admin user password. To check the status of 
 
 .. code:: bash
 
-	[liferayadmin@sg-server ~]$ tail -f /opt/glassfish3/glassfish/domains/liferay/logs/server.log
+	tail -f /opt/glassfish3/glassfish/domains/liferay/logs/server.log
 
 
 You can also type 
@@ -387,7 +388,8 @@ Edit the liferay portal properties file to connect it to the database:
 
 .. code:: bash
 
-    vim /opt/glassfish3/glassfish/domains/liferay/applications/liferay611cega2/WEB-INF/classes/portal-ext.properties
+    vim /opt/glassfish3/glassfish/domains/liferay/applications/liferay611cega2/\
+    WEB-INF/classes/portal-ext.properties
 	
 	jdbc.default.jndi.name=jdbc/liferay
 	

@@ -30,8 +30,9 @@ Create the directory (as liferayadmin)
 
 	[liferayadmin@centos6 ~]$ mkdir /tmp/jobOutput/
 
+--------------------------
 MySQL Server Configuration
-==========================
+--------------------------
 
 Remeber that you need to configure the database. You can do that following :doc:`config-user-tracking-db-in-mysql`
 
@@ -48,6 +49,7 @@ Before starting the installation make sure your liferay domains is stopped.
     Waiting for the domain to stop ......
     Command stop-domain executed successfully.
 
+------------
 Dependencies
 ------------
 
@@ -66,7 +68,7 @@ copy the extracted lib folder under the liferay domain folder:
 
 	[liferayadmin@centos6 ~]$ cp -r lib /opt/glassfish3/glassfish/domains/liferay/
 
-
+-------------
 Configuration
 -------------
 
@@ -78,8 +80,6 @@ Download the attached GridEngineLogConfig.xml `link <https://raw.githubuserconte
 
 	[liferayadmin@centos6 ~]$ mv GridEngineLogConfig.xml \ 
 	/opt/glassfish3/glassfish/domains/liferay/config
-
-
 
 **Glassfish Configuration**
 
@@ -254,7 +254,7 @@ Finally, you have to create the required JDBC Resources. Select `Resources -> JD
    
    jdbcgehibernatepool JDBC Resource
 
-
+---------------------
 Finalize installation
 ---------------------
 

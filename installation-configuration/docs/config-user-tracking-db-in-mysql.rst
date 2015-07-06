@@ -27,19 +27,20 @@ Add a new user and a new database named userstracking. Give the user the privile
 
 .. code:: sql
 
-	mysql> CREATE USER 'tracking_user' IDENTIFIED BY 'usertracking';
+	CREATE USER 'tracking_user' IDENTIFIED BY 'usertracking';
 	Query OK, 0 rows affected (0.00 sec)
 	
-	mysql> CREATE DATABASE userstracking;
+	CREATE DATABASE userstracking;
 	Query OK, 1 row affected (0.00 sec)
 	
-	mysql> GRANT ALL PRIVILEGES ON userstracking.* TO 'tracking_user'@'localhost' IDENTIFIED BY 'usertracking';
+	GRANT ALL PRIVILEGES ON userstracking.* TO 'tracking_user'@'localhost' 
+	IDENTIFIED BY 'usertracking';
 	Query OK, 0 rows affected (0.05 sec)
 	
-	mysql> FLUSH PRIVILEGES;
+	FLUSH PRIVILEGES;
 	Query OK, 0 rows affected (0.04 sec)
 	
-	mysql> exit
+	exit
 	Bye
 
 You need to copy the empty schema for the database. Download `this file <https://raw.githubusercontent.com/csgf/grid-and-cloud-engine/master/UsersTrackingDB/UsersTrackingDB.sql>`_ and:
