@@ -2,7 +2,13 @@
 Installing Liferay 6.1.1 on Glassfish 3.1.x
 *******************************************
 
-**Server(s) requirements**
+================
+Preliminar steps
+================
+
+----------------------
+Server(s) requirements
+----------------------
 
 The Science Gateway and the database can be installed either on different machines or on the same one. As we chose the first approach, this is the one that is explained below. From now in on we will refer to these machines as: 
 
@@ -15,19 +21,19 @@ Database Server        **sg-database**
 
 The next table shows physical configurations for both machines
 
-+-----------------------+------------------+----------------------------+------------+-----------+
-|Server Name            | Arch             | CPU                        | RAM        | Disk Space| 
-+-----------------------+------------------+----------------------------+------------+-----------+      
-|Scienge Gateway Server | x86_64 GNU/Linux | >= 4 cores (8 reccomended) | >= 8 gigas | >= 1 TB   |
-+-----------------------+------------------+----------------------------+------------+-----------+
-|Database Server        | x86_64 GNU/Linux | >= 1 core                  | >= 1 giga  | >= 20 GB  |
-+-----------------------+------------------+----------------------------+------------+-----------+
++------------------------+------------------+----------------------------+------------+------------+
+| Server Name            | Arch             | CPU                        | RAM        | Disk Space | 
++========================+==================+============================+============+============+      
+| Scienge Gateway Server | x86_64 GNU/Linux | >= 4 cores (8 reccomended) | >= 8 gigas |  >= 1 TB   |
++------------------------+------------------+----------------------------+------------+------------+
+| Database Server        | x86_64 GNU/Linux | >= 1 core                  | >= 1 giga  |  >= 20 GB  |
++------------------------+------------------+----------------------------+------------+------------+
 
 The next table shows other configurations for machines. Of course you can choose the operative system you prefer, this is simply our choice. 
 
 +-----------------------+------------------+-------------------------+-------------------------+
 |Server Name            | Operative System | TERENA Host Certificate | Network Public Interface|
-+-----------------------+------------------+-------------------------+-------------------------+  
++=======================+==================+=========================+============+============+
 |Scienge Gateway Server | CentOs 6.2       | Yes, CoMoDo             | Yes                     |
 +-----------------------+------------------+-------------------------+-------------------------+
 |Database Server        | Debian 6.0.3     | No                      | No                      |
@@ -46,10 +52,9 @@ Verify that your machine has direct and reverse address resolution (check your D
 
 The full list of the hardware server requirements can be downloaded from :download:`here <figures-and-documents/Catania_SG_service_list.pdf>`
 
-.. `here <https://github.com/csgf/csgf/blob/master/installation-configuration/docs/figures-and-documents/Catania%20SG%20service%20list.pdf>`_
-
-
-**Preliminary software installation**
+---------------------
+Software requirements
+---------------------
 
 You must be **root** on the machine to perform next steps.
 
@@ -78,9 +83,9 @@ Now you can install the following software:
 	fontpackages-tools mysql.x86_64 mod_ssl.x86_64 \
 	php.x86_64 vim-enhanced.x86_64 fetch-crl
 
-
-
-**Apache Configuration**
+--------------------
+Apache Configuration
+--------------------
 
 To allow the Science Gateway to accept connections on port 80, you need to configure and start Apache. At these steps you need to specify the certificate file for the machine for SSL connection. This certificate file should be supplied from your CA authority.
 
@@ -91,7 +96,6 @@ Download into
 .. code:: bash
 
 	/etc/httpd/conf.d/
-
 
 The following files: 
 
@@ -152,8 +156,9 @@ configure apache to start at boot
 
 	chkconfig --level 2345 httpd on
 
-
-**Create liferayadmin user**
+------------------------
+Create liferayadmin user
+------------------------
 
 It is important to install liferay and its application server (i.e. glassfish) as a **normal** user and not root. For this reason, before continuing with the installation, create a specific user and use it to execute the next commands: 
 
@@ -199,7 +204,7 @@ When you create a domain for liferay in glassfish, you will be asked for a usern
 	Distinguished Name of the self-signed X.509 Server Certificate is:
 	[CN=oldliferay2,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US]
 	Distinguished Name of the self-signed X.509 Server Certificate is:
-	[CN=oldliferay2-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US]
+	[CN=oldliferay2-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=Calif...
 	No domain initializers found, bypassing customization step
 	Domain test created.
 	Domain test admin port is 4848.
@@ -227,11 +232,14 @@ Edit the configuration file in other to increase the size of the virtual machine
 	<jvm-options>-XX:SurvivorRatio=10</jvm-options>
 	<jvm-options>-Dfile.encoding=UTF8</jvm-options> 
 	<jvm-options>-Djava.net.preferIPv4Stack=true</jvm-options> 
-	<jvm-options>-Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false</jvm-options>
+	<jvm-options>
+	   -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false
+	</jvm-options>
 	<jvm-options>-Duser.timezone=GMT</jvm-options>
 
-
-**Configure glassfish to access the database**
+------------------------------------------
+Configure glassfish to access the database
+------------------------------------------
 
 Liferay needs a database to run. Instead of accessing it directly, Liferay can use a Connection Pool defined in Glassfish to open a connection to the database server. Running the following command the connections will be created. 
 
@@ -253,10 +261,13 @@ Now you can run the command:
 
 .. code:: bash
 
-	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin -u liferayadmin create-jdbc-connection-pool \ 
+	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin \
+	-u liferayadmin create-jdbc-connection-pool \
 	--datasourceclassname com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource \
 	--restype javax.sql.ConnectionPoolDataSource \
-	--property "user=liferayadmin:password=liferayadminMySqlPasswrod:url='jdbc:mysql://sg-database:3306/lportal'" LiferayPool 
+	--property \
+	"user=liferayadmin:password=liferayadminMySqlPasswrod:\
+	url='jdbc:mysql://sg-database:3306/lportal'" LiferayPool 
 	
 	[liferayadmin@sg-server ~]$ sh /opt/glassfish3/bin/asadmin -u liferayadmin create-jdbc-resource \
 	--connectionpoolid LiferayPool jdbc/liferay 
