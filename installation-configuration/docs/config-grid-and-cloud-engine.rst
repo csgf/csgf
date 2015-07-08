@@ -53,13 +53,13 @@ Before starting the installation make sure your liferay domains is stopped.
 Dependencies
 ------------
 
-Download Grid & Cloud Engine and JSAGA libraries from `here <http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Liferay6.1/GridEngine_v1.5.9.zip>`_
+Download Grid & Cloud Engine and JSAGA libraries from `here <http://grid.ct.infn.it/csgf/binaries/GridEngine_v1.5.10.zip>`_
 
 Unzip GridEngine_v1.5.9.zip:
 
 .. code::
 
-	[liferayadmin@centos6 ~]$ unzip GridEngine_v1.5.9.zip
+	[liferayadmin@centos6 ~]$ unzip GridEngine_v1.5.10.zip
 
 
 copy the extracted lib folder under the liferay domain folder:
