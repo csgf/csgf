@@ -45,11 +45,8 @@ The documentation is organized in the following sections:
 	:caption: CORE SERVICES
 
 	application-registry-portlet/docs/index
-	eToken/docs/index
 	federated-login-ext/docs/index
 	glibrary/docs/index
-        grid-and-cloud-engine/docs/index
-	jsaga-adaptor-rocci/docs/index
 	myjobs-portlet/docs/index
 	OpenIdConnectLiferay/docs/index
 	sgmon/docs/index
@@ -61,7 +58,6 @@ The documentation is organized in the following sections:
 	:caption: WEB APPLICATIONS
 
         abinitdm-portlet/docs/index
-        aleph-portlet/docs/index
         astra-portlet/docs/index
         cloudapps-portlet/docs/index
         clustalw-portlet/docs/index
@@ -70,14 +66,10 @@ The documentation is organized in the following sections:
         interoperability-demo-portlet/docs/index
         iort-portlet/docs/index
         knowledge-base-portlet/docs/index
-        mpi-portlet/docs/index
         mi-parallel-portlet/docs/index
         mycloud-portlet/docs/index
         nuclemd-portlet/docs/index
-        octave2-portlet/docs/index
         parallel-semantic-search-portlet/docs/index
-        picalc-portlet/docs/index
-        r-portlet/docs/index
         semantic-search-portlet/docs/index
         sonification-portlet/docs/index
         trodan-portlet/docs/index
@@ -92,7 +84,6 @@ The documentation is organized in the following sections:
 
 	aginfra-sg-mobile/docs/index
 	dchrp-ecsg-mobile/docs/index
-	earthserver-sg-mobile/docs/index
 	semantic-search-app/docs/index
 
 
@@ -102,7 +93,6 @@ The documentation is organized in the following sections:
 	:caption: API SERVICES
 
 	scoap3-harvester-api/docs/index
-	semantic-search-api/docs/index
 
 
 .. _training-docs:
