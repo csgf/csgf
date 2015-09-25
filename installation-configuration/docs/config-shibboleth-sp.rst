@@ -12,8 +12,7 @@ An apache server and shibboleth installed on the machine
 
 You should have some apache files configure as follow (usually store in */etc/httpd/conf.d*)
 
-
-*shib.conf
+  *shib.conf
 
 
 ::
@@ -30,8 +29,7 @@ You should have some apache files configure as follow (usually store in */etc/ht
 	...
 
   
-
-*shibSec.conf
+  *shibSec.conf
 
 ::
 
@@ -62,8 +60,7 @@ You should have some apache files configure as follow (usually store in */etc/ht
 	...
 
 
-
-*proxy_ajp.conf
+ *proxy_ajp.conf
 
 
 Once you configure the custom url you need to avoid them to contact the glassfish listener
@@ -79,9 +76,7 @@ Once you configure the custom url you need to avoid them to contact the glassfis
 	...
 
 
-
-
-**Configure Liferay to contact Shibboleth for authentication**
+ **Configure Liferay to contact Shibboleth for authentication**
 
 
 **Install Shibboleth plugin**

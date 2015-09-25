@@ -1,14 +1,14 @@
-**************************************
+***************************************
 Configuring MySQL Database for liferay
 **************************************
 
-=======================
-Prerequisites - Machine
-=======================
+
+
+**Prerequisites - Machine:**
 
 These instructions describes how to install and configure a mysql server on a Debian 6.0.3
 
-.. code::
+::
 
 	root@sg-database:~# lsb_release -a
 	No LSB modules are available.
@@ -20,40 +20,37 @@ These instructions describes how to install and configure a mysql server on a De
 
 Install vim: 
 
-.. code::
+::
 
 	apt-get install vim
 
-==================================
-MySQL Installation & Configuration
-==================================
+
+**MySQL Installation & Configuration**
 
 
 Install MySQL server and client:
 
-.. code::
+::
 
 	apt-get mysql-client mysql-server
 
 
-Create databases
-----------------
+**Create databases**
 
 First you need to set mysql password:
  
-.. code::
+::
 
 	mysqladmin -u root password 'rootPassword'
 
 
 Then you can create an user and a database for liferay, and an user and a database for the Catania Grid Engine. 
 
-Database lportal
-----------------
+**Database lportal**
 
 Access as root using the password you have just set:
 
-.. code::
+::
 
 	root@sg-database:~# mysql -u root -p
 	Enter password: 
@@ -72,31 +69,28 @@ Access as root using the password you have just set:
 
 Add a new user and a new database named lportal. Give the user the privileges to access the database. It's important to grant the privileges even for the access from the science gateway
 
-.. code:: sql
+::
 
-	CREATE USER 'liferayadmin' IDENTIFIED BY 'fillWithYourPassword';
+	mysql> CREATE USER 'liferayadmin' IDENTIFIED BY 'fillWithYourPassword';
 	Query OK, 0 rows affected (0.00 sec)
 	
-	CREATE DATABASE lportal;
+	mysql> CREATE DATABASE lportal;
 	Query OK, 1 row affected (0.00 sec)
 	
-	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost'
-    IDENTIFIED BY 'yourPasswd';
+	mysql>  GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'localhost' IDENTIFIED BY 'fillWithYourPassword';
 	Query OK, 0 rows affected (0.05 sec)
 	
-	GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'IPOfsg-server'
-    IDENTIFIED BY 'yourPasswd';
+	mysql>  GRANT ALL PRIVILEGES ON lportal.* TO 'liferayadmin'@'IPAddressOfsg-server' IDENTIFIED BY 'fillWithYourPassword';
 	Query OK, 0 rows affected (0.05 sec)
 	
-	FLUSH PRIVILEGES;
+	mysql> FLUSH PRIVILEGES;
 	Query OK, 0 rows affected (0.04 sec)
 	
-	exit
+	mysql> exit
 	Bye
 
-===============
-Troubleshooting
-===============
+**Troubleshooting**
+
 
 **Firewall**
 
@@ -107,7 +101,7 @@ In case you are not able to connect to the database from the server check the fi
 
 Check that mysql is enabled to accept remote connections:
 
-.. code:: sql
+::
 
 	root@sg-database:~# vim /etc/my.cnf
 		

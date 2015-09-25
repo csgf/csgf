@@ -1,0 +1,120 @@
+[submodule "abinitdm-portlet"]
+	path = abinitdm-portlet
+	url = https://github.com/csgf/abinitdm-portlet.git
+[submodule "knowledge-base-portlet"]
+	path = knowledge-base-portlet
+	url = https://github.com/csgf/knowledge-base-portlet
+[submodule "glibrary"]
+	path = glibrary
+	url = https://github.com/csgf/glibrary.git
+[submodule "jsaga-adaptor-rocci"]
+	path = jsaga-adaptor-rocci
+	url = https://github.com/csgf/jsaga-adaptor-rocci.git
+[submodule "cloudapps-portlet"]
+	path = cloudapps-portlet
+	url = https://github.com/csgf/cloudapps-portlet.git
+[submodule "nuclemd-portlet"]
+	path = nuclemd-portlet
+	url = https://github.com/csgf/nuclemd-portlet.git
+[submodule "trodan-portlet"]
+	path = trodan-portlet
+	url = https://github.com/csgf/trodan-portlet.git
+[submodule "wrf-portlet"]
+	path = wrf-portlet
+	url = https://github.com/csgf/wrf-portlet.git
+[submodule "clustalw-portlet"]
+	path = clustalw-portlet
+	url = https://github.com/csgf/clustalw-portlet.git
+[submodule "fratt-portlet"]
+	path = fratt-portlet
+	url = https://github.com/csgf/fratt-portlet.git
+[submodule "iort-portlet"]
+	path = iort-portlet
+	url = https://github.com/csgf/iort-portlet.git
+[submodule "sonification-portlet"]
+	path = sonification-portlet
+	url = https://github.com/csgf/sonification-portlet.git
+[submodule "astra-portlet"]
+	path = astra-portlet
+	url = https://github.com/csgf/astra-portlet.git
+[submodule "gromacs-portlet"]
+	path = gromacs-portlet
+	url = https://github.com/csgf/gromacs-portlet.git
+[submodule "eToken"]
+	path = eToken
+	url = https://github.com/csgf/eToken.git
+[submodule "mycloud-portlet"]
+	path = mycloud-portlet
+	url = https://github.com/csgf/mycloud-portlet.git
+[submodule "picalc-portlet"]
+	path = picalc-portlet
+	url = https://github.com/csgf/picalc-portlet.git
+[submodule "mpi-portlet"]
+	path = mpi-portlet
+	url = https://github.com/csgf/mpi-portlet.git
+[submodule "mi-hostname-portlet"]
+	path = mi-hostname-portlet
+	url = https://github.com/csgf/mi-hostname-portlet.git
+[submodule "scoap3-harvester-api"]
+	path = scoap3-harvester-api
+	url = https://github.com/csgf/scoap3-harvester-api.git
+[submodule "semantic-search-api"]
+	path = semantic-search-api
+	url = https://github.com/csgf/semantic-search-api.git
+[submodule "parallel-semantic-search-portlet"]
+	path = parallel-semantic-search-portlet
+	url = https://github.com/csgf/parallel-semantic-search-portlet.git
+[submodule "semantic-search-portlet"]
+	path = semantic-search-portlet
+	url = https://github.com/csgf/semantic-search-portlet.git
+[submodule "mi-parallel-portlet"]
+	path = mi-parallel-portlet
+	url = https://github.com/csgf/mi-parallel-portlet.git
+[submodule "federated-login-ext"]
+	path = federated-login-ext
+	url = https://github.com/csgf/federated-login-ext.git
+[submodule "r-portlet"]
+	path = r-portlet
+	url = https://github.com/csgf/r-portlet.git
+[submodule "sgmon"]
+	path = sgmon
+	url = https://github.com/csgf/sgmon.git
+[submodule "octave2-portlet"]
+	path = octave2-portlet
+	url = https://github.com/csgf/octave2-portlet.git
+[submodule "corsika-lago-portlet"]
+	path = corsika-lago-portlet
+	url = https://github.com/csgf/corsika-lago-portlet.git
+[submodule "aleph-portlet"]
+	path = aleph-portlet
+	url = https://github.com/csgf/aleph-portlet.git
+[submodule "myjobs-portlet"]
+	path = myjobs-portlet
+	url = https://github.com/csgf/myjobs-portlet.git
+[submodule "dchrp-ecsg-mobile"]
+	path = dchrp-ecsg-mobile
+	url = https://github.com/csgf/dchrp-ecsg-mobile.git
+[submodule "earthserver-sg-mobile"]
+	path = earthserver-sg-mobile
+	url = https://github.com/csgf/earthserver-sg-mobile.git
+[submodule "application-registry-portlet"]
+	path = application-registry-portlet
+	url = https://github.com/csgf/application-registry-portlet.git
+[submodule "semantic-search-app"]
+	path = semantic-search-app
+	url = https://github.com/csgf/semantic-search-app.git
+[submodule "aginfra-sg-mobile"]
+	path = aginfra-sg-mobile
+	url = https://github.com/csgf/aginfra-sg-mobile.git
+[submodule "OpenIdConnectLiferay"]
+	path = OpenIdConnectLiferay
+	url = https://github.com/csgf/OpenIdConnectLiferay.git
+[submodule "grid-and-cloud-engine"]
+	path = grid-and-cloud-engine
+	url = https://github.com/csgf/grid-and-cloud-engine.git
+[submodule "glibrary-repo-browser-portlet"]
+	path = glibrary-repo-browser-portlet
+	url = https://github.com/csgf/glibrary-repo-browser-portlet.git
+[submodule "interoperability-demo-portlet"]
+	path = interoperability-demo-portlet
+	url = https://github.com/csgf/interoperability-demo-portlet.git
