@@ -1,15 +1,11 @@
-******************************************************
-Configuring MySQL Database for the Catania Grid Engine
-******************************************************
+**********************************************************
+Configuring the MySQL Database for the Grid & Cloud Engine
+**********************************************************
 
-
-Let's suppose you already installed mysql server on the machine and you configured the root user and password. If you don't follow the [prerequisites here](https://sourceforge.net/p/ctsciencegtwys/wiki/ConfigLportalInMySQL/#prerequisites)
-
+Let's suppose you already installed the MySQL server on the machine and you configured the root user and password. If you don't refers to the :doc:`config-lportal-in-mysql` guide.
 Access as root using the password you have just set:
 
-
-::
-
+.. code:: 
 
 	root@sg-database:~# mysql -u root -p
 	Enter password: 
@@ -29,36 +25,29 @@ Access as root using the password you have just set:
 
 Add a new user and a new database named userstracking. Give the user the privileges to access the database. It's important to grant the privileges even for the access from the science gateway
 
+.. code:: sql
 
-::
-
-
-	mysql> CREATE USER 'tracking_user' IDENTIFIED BY 'usertracking';
+	CREATE USER 'tracking_user' IDENTIFIED BY 'usertracking';
 	Query OK, 0 rows affected (0.00 sec)
 	
-	mysql> CREATE DATABASE userstracking;
+	CREATE DATABASE userstracking;
 	Query OK, 1 row affected (0.00 sec)
 	
-	mysql>  GRANT ALL PRIVILEGES ON userstracking.* TO 'tracking_user'@'localhost' IDENTIFIED BY 'usertracking';
+	GRANT ALL PRIVILEGES ON userstracking.* TO 'tracking_user'@'localhost' 
+	IDENTIFIED BY 'usertracking';
 	Query OK, 0 rows affected (0.05 sec)
 	
-	mysql>  GRANT ALL PRIVILEGES ON lportal.* TO 'tracking_user'@'IPAddressOfsg-server' IDENTIFIED BY 'usertracking';
-	Query OK, 0 rows affected (0.05 sec)
-	
-	mysql> FLUSH PRIVILEGES;
+	FLUSH PRIVILEGES;
 	Query OK, 0 rows affected (0.04 sec)
 	
-	mysql> exit
+	exit
 	Bye
 
+You need to copy the empty schema for the database. Download `this file <https://raw.githubusercontent.com/csgf/grid-and-cloud-engine/master/UsersTrackingDB/UsersTrackingDB.sql>`_ and:
 
-You need to copy the empty schema for the database. Download [this file](http://sourceforge.net/projects/ctsciencegtwys/files/catania-grid-engine/1.5.9/Database/UsersTrackingDB.sql/download) and:
+.. code:: sql
 
-
-::
-
-
-	root@sg-database:~# mysql -u root -p
+	root@sg-database:~# mysql -u tracking_user -p userstracking
 	Enter password: 
 	
 	mysql> source UsersTrackingDB.sql;
