@@ -62,6 +62,7 @@ The documentation is organized in the following sections:
 
         abinitdm-portlet/docs/index
         aleph-portlet/docs/index
+        alice-portlet/docs/index
         astra-portlet/docs/index
         cloudapps-portlet/docs/index
         clustalw-portlet/docs/index

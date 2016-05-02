@@ -118,3 +118,6 @@
 [submodule "interoperability-demo-portlet"]
 	path = interoperability-demo-portlet
 	url = https://github.com/csgf/interoperability-demo-portlet.git
+[submodule "alice-portlet"]
+	path = alice-portlet
+	url = https://github.com/csgf/alice-portlet.git
