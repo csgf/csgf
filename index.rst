@@ -70,6 +70,7 @@ The documentation is organized in the following sections:
         glibrary-repo-browser-portlet/docs/index
         gromacs-portlet/docs/index
         infectionModel-portlet/docs/index
+        infectionModel-parallel-portlet/docs/index
         interoperability-demo-portlet/docs/index
         iort-portlet/docs/index
         knowledge-base-portlet/docs/index

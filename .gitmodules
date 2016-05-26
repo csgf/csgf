@@ -130,3 +130,6 @@
 [submodule "template-portlet"]
 	path = template-portlet
 	url = https://github.com/csgf/template-portlet.git
+[submodule "infectionModel-parallel-portlet"]
+	path = infectionModel-parallel-portlet
+	url = https://github.com/csgf/infectionModel-parallel-portlet.git
