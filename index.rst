@@ -17,7 +17,7 @@ The documentation is organized in the following sections:
 * :ref:`web-docs`
 	This section includes the documentation of all the web applications that have been integrated in the Science Gateways powered by the CSGF.
 * :ref:`mobile-docs`
-	This section includes the documentation of the apps for mobile appliances which are part of the CSGF.
+	This section includes the documentation of the apps for mobile appliances which are part of the CSGF
 * :ref:`api-docs`
 	This section includes the documentation of the APIs written to use some of the CSGF services.
 * :ref:`training-docs`
