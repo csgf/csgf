@@ -84,6 +84,8 @@ The documentation is organized in the following sections:
         r-portlet/docs/index
         semantic-search-portlet/docs/index
         sonification-portlet/docs/index
+        template-portlet/docs/index
+        template-special-job-portlet/docs/index
         trodan-portlet/docs/index
         wrf-portlet/docs/index
 

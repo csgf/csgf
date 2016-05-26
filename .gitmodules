@@ -124,3 +124,9 @@
 [submodule "infectionModel-portlet"]
 	path = infectionModel-portlet
 	url = https://github.com/csgf/infectionModel-portlet.git
+[submodule "template-special-job-portlet"]
+	path = template-special-job-portlet
+	url = https://github.com/csgf/template-special-job-portlet.git
+[submodule "template-portlet"]
+	path = template-portlet
+	url = https://github.com/csgf/template-portlet.git
