@@ -88,6 +88,7 @@ The documentation is organized in the following sections:
         template-portlet/docs/index
         template-special-job-portlet/docs/index
         trodan-portlet/docs/index
+        visualize-infection-model-portlet/docs/index
         wrf-portlet/docs/index
 
 

@@ -133,3 +133,6 @@
 [submodule "infectionModel-parallel-portlet"]
 	path = infectionModel-parallel-portlet
 	url = https://github.com/csgf/infectionModel-parallel-portlet.git
+[submodule "visualize-infection-model-portlet"]
+	path = visualize-infection-model-portlet
+	url = https://github.com/csgf/visualize-infection-model-portlet.git
